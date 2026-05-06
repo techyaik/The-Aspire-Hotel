@@ -185,155 +185,139 @@
 
 
   <!-- ═══════════════════════ FACILITIES ═══════════════════════ -->
-  <section class="facilities-section" id="services">
-    <div class="rooms-header reveal">
-      <span class="eyebrow">FACILITIES AND SERVICES</span>
-      <h2 class="section-title">Discover Our Services</h2>
-    </div>
-
-    <div class="collection-slider embla reveal" id="facilities-slider">
-      <div class="slider-track embla__container">
-
-        <!-- Railway & Hygiene -->
-        <div class="slider-slide embla__slide">
-          <div class="room-card-large">
-            <div class="room-info-pane">
-              <div class="room-price-tag">
-                <span class="price-label">Location</span>
-                <span class="price-val">Strategic & Central</span>
-              </div>
-              <h3 class="room-name-large">Prime Location &amp; Hygiene</h3>
-              <p class="room-desc-large">Ideally located near the Guwahati Railway Station. We offer spacious rooms and
-                prioritize utmost hygiene care for your comfortable and memorable stay.</p>
-              <div class="room-details-grid">
-                <div class="detail-item"><i class="ph ph-train"></i><span>NEAR RAILWAY STATION</span></div>
-                <div class="detail-item"><i class="ph ph-sparkle"></i><span>HYGIENE CARE</span></div>
-                <div class="detail-item"><i class="ph ph-arrows-out"></i><span>SPACIOUS ROOMS</span></div>
-              </div>
-              <div class="room-actions-large no-res">
-                <a href="#about" class="btn-view-room">EXPLORE MORE &nbsp;→</a>
-              </div>
-            </div>
-            <div class="room-image-pane">
-              <img src="./assets/images/about_2.png" alt="Prime Location" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Tour Packages -->
-        <div class="slider-slide embla__slide">
-          <div class="room-card-large">
-            <div class="room-info-pane">
-              <div class="room-price-tag">
-                <span class="price-label">Travel Desk</span>
-                <span class="price-val">Explore North-East</span>
-              </div>
-              <h3 class="room-name-large">Tour &amp; Group Bookings</h3>
-              <p class="room-desc-large">Specialized tour packages and seamless arrangements for group bookings to
-                explore popular destinations across the North-East states.</p>
-              <div class="room-details-grid">
-                <div class="detail-item"><i class="ph ph-users-three"></i><span>GROUP BOOKINGS</span></div>
-                <div class="detail-item"><i class="ph ph-map-trifold"></i><span>TOUR PACKAGES</span></div>
-                <div class="detail-item"><i class="ph ph-van"></i><span>TRAVEL ASSIST</span></div>
-              </div>
-              <div class="room-actions-large no-res">
-                <a href="./offers.php" class="btn-view-room">VIEW OFFERS &nbsp;→</a>
-              </div>
-            </div>
-            <div class="room-image-pane">
-              <img src="./assets/images/facility_tour.png" alt="Tour Packages" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Parking -->
-        <div class="slider-slide embla__slide">
-          <div class="room-card-large">
-            <div class="room-info-pane">
-              <div class="room-price-tag">
-                <span class="price-label">Convenience</span>
-                <span class="price-val">Hassle-Free Parking</span>
-              </div>
-              <h3 class="room-name-large">Ample Car Parking</h3>
-              <p class="room-desc-large">Enjoy peace of mind with our dedicated and ample car parking facilities,
-                ensuring safety and convenience for all our guests travelling by road.</p>
-              <div class="room-details-grid">
-                <div class="detail-item"><i class="ph ph-car"></i><span>SECURE PARKING</span></div>
-                <div class="detail-item"><i class="ph ph-shield-check"></i><span>24/7 SAFETY</span></div>
-                <div class="detail-item"><i class="ph ph-clock"></i><span>EASY ACCESS</span></div>
-              </div>
-              <div class="room-actions-large no-res">
-                <a href="#contact" class="btn-view-room">REACH US &nbsp;→</a>
-              </div>
-            </div>
-            <div class="room-image-pane">
-              <img src="./assets/images/facility_parking.png" alt="Ample Parking" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Rooftop Dining -->
-        <div class="slider-slide embla__slide">
-          <div class="room-card-large">
-            <div class="room-info-pane">
-              <div class="room-price-tag">
-                <span class="price-label">Rooftop View</span>
-                <span class="price-val">Dine with a View</span>
-              </div>
-              <h3 class="room-name-large">Rooftop Restaurant</h3>
-              <p class="room-desc-large">Experience breathtaking views of the city and hills from our rooftop. Savour
-                delicious, home-style food prepared fresh on request.</p>
-              <div class="room-details-grid">
-                <div class="detail-item"><i class="ph ph-mountains"></i><span>CITY &amp; HILL VIEWS</span></div>
-                <div class="detail-item"><i class="ph ph-house-line"></i><span>HOME STYLE FOOD</span></div>
-                <div class="detail-item"><i class="ph ph-chef-hat"></i><span>ON REQUEST</span></div>
-              </div>
-              <div class="room-actions-large no-res">
-                <a href="./dining.php" class="btn-view-room">VIEW DINING &nbsp;→</a>
-              </div>
-            </div>
-            <div class="room-image-pane">
-              <img src="./assets/images/facility_rooftop.png" alt="Rooftop Restaurant" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Events -->
-        <div class="slider-slide embla__slide">
-          <div class="room-card-large">
-            <div class="room-info-pane">
-              <div class="room-price-tag">
-                <span class="price-label">Events</span>
-                <span class="price-val">Celebrate with Us</span>
-              </div>
-              <h3 class="room-name-large">Parties &amp; Gatherings</h3>
-              <p class="room-desc-large">The perfect venue for birthday party celebrations and small get-together
-                arrangements, crafted with care for your special moments.</p>
-              <div class="room-details-grid">
-                <div class="detail-item"><i class="ph ph-cake"></i><span>BIRTHDAY PARTIES</span></div>
-                <div class="detail-item"><i class="ph ph-users-four"></i><span>GET TOGETHERS</span></div>
-                <div class="detail-item"><i class="ph ph-sparkle"></i><span>CUSTOM EVENTS</span></div>
-              </div>
-              <div class="room-actions-large no-res">
-                <a href="#contact" class="btn-view-room">BOOK AN EVENT &nbsp;→</a>
-              </div>
-            </div>
-            <div class="room-image-pane">
-              <img src="./assets/images/facility_events.png" alt="Celebrations" />
-            </div>
-          </div>
-        </div>
-
+  <section class="facilities-grid-section" id="services">
+    <div class="container">
+      <div class="rooms-header reveal">
+        <span class="eyebrow" style="color: var(--gold); letter-spacing: 4px; font-weight: 600;">MODERN AND COMFORTABLE</span>
+        <h2 class="section-title" style="font-family: var(--font-serif); font-size: 64px; margin-top: 10px;">Facilities and amenities</h2>
       </div>
 
-      <button class="slider-arrow prev" aria-label="Previous facility">
-        <i class="ph ph-arrow-left"></i>
-      </button>
-      <button class="slider-arrow next" aria-label="Next facility">
-        <i class="ph ph-arrow-right"></i>
-      </button>
+      <div class="f-grid reveal">
+        <!-- 01 -->
+        <div class="f-card">
+          <span class="f-num">01</span>
+          <div class="f-icon"><i class="ph ph-train"></i></div>
+          <h3 class="f-title">Prime Location</h3>
+          <p class="f-desc">Ideally located near the Guwahati Railway Station with utmost hygiene care for your stay.</p>
+        </div>
+
+        <!-- 02 -->
+        <div class="f-card">
+          <span class="f-num">02</span>
+          <div class="f-icon"><i class="ph ph-map-trifold"></i></div>
+          <h3 class="f-title">Tour Packages</h3>
+          <p class="f-desc">Specialized tour packages and arrangements for group bookings to explore the North-East.</p>
+        </div>
+
+        <!-- 03 -->
+        <div class="f-card">
+          <span class="f-num">03</span>
+          <div class="f-icon"><i class="ph ph-car"></i></div>
+          <h3 class="f-title">Ample Parking</h3>
+          <p class="f-desc">Dedicated and secure car parking facilities ensuring convenience for all our guests.</p>
+        </div>
+
+        <!-- 04 -->
+        <div class="f-card">
+          <span class="f-num">04</span>
+          <div class="f-icon"><i class="ph ph-mountains"></i></div>
+          <h3 class="f-title">Rooftop Dining</h3>
+          <p class="f-desc">Experience breathtaking city views and savour delicious home-style food fresh on request.</p>
+        </div>
+
+        <!-- 05 -->
+        <div class="f-card">
+          <span class="f-num">05</span>
+          <div class="f-icon"><i class="ph ph-cake"></i></div>
+          <h3 class="f-title">Event Hosting</h3>
+          <p class="f-desc">The perfect venue for birthday parties and small get-togethers with personalised service.</p>
+        </div>
+
+        <!-- 06 -->
+        <div class="f-card">
+          <span class="f-num">06</span>
+          <div class="f-icon"><i class="ph ph-clock"></i></div>
+          <h3 class="f-title">24/7 Front Desk</h3>
+          <p class="f-desc">Our dedicated staff is here to assist you with any requests at any hour of the day or night.</p>
+        </div>
+
+        <!-- 07 -->
+        <div class="f-card">
+          <span class="f-num">07</span>
+          <div class="f-icon"><i class="ph ph-wifi-high"></i></div>
+          <h3 class="f-title">Complimentary Wi-Fi</h3>
+          <p class="f-desc">Stay connected with high-speed internet access available throughout the hotel premises.</p>
+        </div>
+
+        <!-- 08 -->
+        <div class="f-card">
+          <span class="f-num">08</span>
+          <div class="f-icon"><i class="ph ph-house-line"></i></div>
+          <h3 class="f-title">In-room Dining</h3>
+          <p class="f-desc">Enjoy our curated menu of home-style food delivered directly to your room on request.</p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <style>
+    .facilities-grid-section {
+      padding: 100px 0;
+      background: #fff;
+    }
+    .f-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 60px;
+    }
+    .f-card {
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .f-card:hover {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border-color: var(--gold);
+    }
+    .f-num {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      font-size: 11px;
+      color: #ccc;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .f-icon {
+      font-size: 42px;
+      color: var(--gold);
+      margin-bottom: 25px;
+    }
+    .f-title {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #1a1a1a;
+    }
+    .f-desc {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+    @media (max-width: 1200px) {
+      .f-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 900px) {
+      .f-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .f-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 
 
   <!-- ═══════════════════════ GALLERY ═══════════════════════ -->
