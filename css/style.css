@@ -1160,7 +1160,7 @@ nav.scrolled .nav-hamburger span {
 }
 
 .room-info-pane {
-  padding: clamp(32px, 5vw, 60px);
+  padding: clamp(20px, 3.5vw, 42px);
   flex: 1 1 450px;
   display: flex;
   flex-direction: column;
@@ -1257,7 +1257,7 @@ nav.scrolled .nav-hamburger span {
   flex: 1.2 1 450px;
   position: relative;
   overflow: hidden;
-  min-height: 400px;
+  min-height: 280px;
 }
 
 .room-image-pane img {
@@ -2264,14 +2264,14 @@ nav.scrolled .nav-hamburger span {
   }
 
   .room-image-pane {
-    min-height: 350px;
+    min-height: 245px;
     order: -1;
     flex-basis: auto;
   }
 
   .room-info-pane {
     flex-basis: auto;
-    padding: 32px 24px;
+    padding: 22px 16px;
   }
 
   .gallery-grid-new {

@@ -134,6 +134,7 @@
 
 
   <!-- ═══════════════════════ ROOMS COLLECTION ═══════════════════════ -->
+  <?php require_once __DIR__ . '/data/rooms.php'; ?>
   <section class="rooms-section" id="rooms">
     <div class="rooms-header reveal">
       <span class="eyebrow">EXQUISITE AND LUXURIOUS</span>
@@ -143,101 +144,29 @@
     <div class="collection-slider embla reveal" id="rooms-slider">
       <div class="slider-track embla__container">
 
-        <!-- Royale Family Room -->
+        <?php foreach ($roomsData as $key => $room): ?>
         <div class="slider-slide embla__slide">
           <div class="room-card-large">
             <div class="room-info-pane">
-              <div class="room-price-tag">
-                <span class="price-label">From</span>
-                <span class="price-val">₹4,500</span>
-                <span class="price-unit">/ night</span>
-              </div>
-              <h3 class="room-name-large">Royale Family Room</h3>
-              <p class="room-desc-large">Cozy and modern, this room offers essential amenities for a comfortable stay,
-                perfect for couples or small families seeking relaxation in the city.</p>
+              <h3 class="room-name-large"><?= htmlspecialchars($room['name']) ?></h3>
+              <p class="room-desc-large"><?= htmlspecialchars($room['description']) ?></p>
               <div class="room-details-grid">
-
-                <div class="detail-item"><i class="ph ph-bed"></i><span>1 KING BED</span></div>
-                <div class="detail-item"><i class="ph ph-users"></i><span>2 ADULTS + 1 CHILD</span></div>
-                <div class="detail-item"><i class="ph ph-map-trifold"></i><span>STREET VIEW</span></div>
+                <div class="detail-item"><i class="ph ph-bed"></i><span><?= strtoupper(htmlspecialchars($room['beds'])) ?></span></div>
+                <div class="detail-item"><i class="ph ph-users"></i><span><?= strtoupper(htmlspecialchars($room['guests'])) ?></span></div>
+                <div class="detail-item"><i class="ph ph-map-trifold"></i><span><?= strtoupper(htmlspecialchars($room['view'])) ?></span></div>
                 <div class="detail-item"><i class="ph ph-prohibit"></i><span>NON-SMOKING</span></div>
-                <div class="detail-item"><i class="ph ph-coffee"></i><span>BREAKFAST INCLUDED</span></div>
               </div>
               <div class="room-actions-large">
-                <a href="./room-details.php?type=royale" class="btn-book-now"><i class="ph ph-calendar-check"></i>BOOK
-                  NOW</a>
-                <a href="./room-details.php?type=royale" class="btn-view-room">VIEW DETAILS &nbsp;→</a>
+                <a href="./room-details.php?type=<?= urlencode($key) ?>" class="btn-book-now"><i class="ph ph-calendar-check"></i>BOOK NOW</a>
+                <a href="./room-details.php?type=<?= urlencode($key) ?>" class="btn-view-room">VIEW DETAILS &nbsp;→</a>
               </div>
             </div>
             <div class="room-image-pane">
-              <img src="./assets/images/room_standard_coll.png" alt="Royale Family Room" />
+              <img src="<?= htmlspecialchars($room['gallery'][0]['url']) ?>" alt="<?= htmlspecialchars($room['name']) ?>" />
             </div>
           </div>
         </div>
-
-        <!-- Premium Family Room -->
-        <div class="slider-slide embla__slide">
-          <div class="room-card-large">
-            <div class="room-info-pane">
-              <div class="room-price-tag">
-                <span class="price-label">From</span>
-                <span class="price-val">₹7,500</span>
-                <span class="price-unit">/ night</span>
-              </div>
-              <h3 class="room-name-large">Premium Family Room</h3>
-              <p class="room-desc-large">Experience elevated luxury with premium furnishings and breathtaking city
-                panoramas. A refined blend of style, space, and comfort.</p>
-              <div class="room-details-grid">
-
-                <div class="detail-item"><i class="ph ph-bed"></i><span>1 KING BED</span></div>
-                <div class="detail-item"><i class="ph ph-users"></i><span>2 ADULTS + 1 CHILD</span></div>
-                <div class="detail-item"><i class="ph ph-city"></i><span>CITY VIEW</span></div>
-                <div class="detail-item"><i class="ph ph-prohibit"></i><span>NON-SMOKING</span></div>
-                <div class="detail-item"><i class="ph ph-coffee"></i><span>BREAKFAST INCLUDED</span></div>
-              </div>
-              <div class="room-actions-large">
-                <a href="./room-details.php?type=premium" class="btn-book-now"><i class="ph ph-calendar-check"></i>BOOK
-                  NOW</a>
-                <a href="./room-details.php?type=premium" class="btn-view-room">VIEW DETAILS &nbsp;→</a>
-              </div>
-            </div>
-            <div class="room-image-pane">
-              <img src="./assets/images/room_deluxe_coll.png" alt="Premium Family Room" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Deluxe Double Room -->
-        <div class="slider-slide embla__slide">
-          <div class="room-card-large">
-            <div class="room-info-pane">
-              <div class="room-price-tag">
-                <span class="price-label">From</span>
-                <span class="price-val">₹12,000</span>
-                <span class="price-unit">/ night</span>
-              </div>
-              <h3 class="room-name-large">Deluxe Double Room</h3>
-              <p class="room-desc-large">Our most exclusive accommodation, featuring a separate living area and
-                unparalleled skyline views. The premier choice for the discerning traveller.</p>
-              <div class="room-details-grid">
-
-                <div class="detail-item"><i class="ph ph-bed"></i><span>2 KING BEDS</span></div>
-                <div class="detail-item"><i class="ph ph-users"></i><span>4 ADULTS</span></div>
-                <div class="detail-item"><i class="ph ph-city"></i><span>SKYLINE VIEW</span></div>
-                <div class="detail-item"><i class="ph ph-prohibit"></i><span>NON-SMOKING</span></div>
-                <div class="detail-item"><i class="ph ph-coffee"></i><span>BREAKFAST INCLUDED</span></div>
-              </div>
-              <div class="room-actions-large">
-                <a href="./room-details.php?type=deluxe" class="btn-book-now"><i class="ph ph-calendar-check"></i>BOOK
-                  NOW</a>
-                <a href="./room-details.php?type=deluxe" class="btn-view-room">VIEW DETAILS &nbsp;→</a>
-              </div>
-            </div>
-            <div class="room-image-pane">
-              <img src="./assets/images/room_suite_coll.png" alt="Deluxe Double Room" />
-            </div>
-          </div>
-        </div>
+        <?php endforeach; ?>
 
       </div>
 
@@ -411,7 +340,7 @@
         <span class="eyebrow">FIND US</span>
         <h2 class="section-title">Our Location</h2>
         <p class="section-sub">
-          123 Luxury Avenue, City Center, Guwahati, Assam — easily accessible from the airport and major landmarks.
+          5PHX+G6W, MD Shah Rd, Paltan Bazaar, Guwahati, Assam 781008 — easily accessible from the airport and major landmarks.
         </p>
       </div>
       <div class="map-container reveal">

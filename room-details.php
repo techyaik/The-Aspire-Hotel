@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/data/rooms.php';
 
-$type = isset($_GET['type']) ? $_GET['type'] : 'royale';
+$type = isset($_GET['type']) ? $_GET['type'] : 'standard-double';
 if (!array_key_exists($type, $roomsData)) {
     $type = array_key_first($roomsData);
 }
@@ -49,10 +49,6 @@ require_once __DIR__ . '/includes/nav.php';
       </a>
       <h1 class="details-room-name"><?= htmlspecialchars($room['name']) ?></h1>
       <div class="details-hero-meta">
-        <span class="details-room-price">
-          From <strong><?= htmlspecialchars($room['price']) ?></strong> / night
-        </span>
-        <span class="details-hero-divider">·</span>
         <span class="details-room-view"><?= htmlspecialchars($room['view']) ?></span>
       </div>
     </div>
@@ -129,11 +125,6 @@ require_once __DIR__ . '/includes/nav.php';
     <aside class="details-sidebar">
       <div class="booking-card reveal">
         <p class="booking-room-name"><?= htmlspecialchars($room['name']) ?></p>
-        <div class="booking-price-block">
-          <span class="booking-from">From</span>
-          <div class="booking-price"><?= htmlspecialchars($room['price']) ?></div>
-          <span class="booking-per-night">per night</span>
-        </div>
         <div class="booking-divider"></div>
         <div class="booking-meta">
           <div class="booking-meta-item">
@@ -150,7 +141,7 @@ require_once __DIR__ . '/includes/nav.php';
           </div>
         </div>
         <div class="booking-divider"></div>
-        <a href="https://wa.me/919957173362" target="_blank" rel="noopener" class="btn-book-large">
+        <a href="https://wa.me/916001232340" target="_blank" rel="noopener" class="btn-book-large">
           <i class="ph ph-whatsapp-logo"></i>
           BOOK VIA WHATSAPP
         </a>

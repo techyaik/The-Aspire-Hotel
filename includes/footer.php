@@ -31,9 +31,10 @@
       <div class="footer-col">
         <h4 class="footer-title">CONTACT US</h4>
         <div class="contact-info">
-          <p>123 Luxury Avenue, City Center,<br />Guwahati, India</p>
-          <p class="phone">+91 1234 567 890</p>
-          <p class="email">booking@theaspirehotel.com</p>
+          <p>5PHX+G6W, MD Shah Rd, Paltan Bazaar,<br />Guwahati, Assam 781008</p>
+          <p class="phone">+91 6001232340, +91 9281912340</p>
+          <p class="email">theaspirehotel1@gmail.com</p>
+          <p class="whatsapp">WhatsApp: +91 6001232340</p>
         </div>
       </div>
 

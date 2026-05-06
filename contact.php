@@ -330,7 +330,7 @@ require_once __DIR__ . '/includes/nav.php';
           </div>
           <div class="contact-detail-text">
             <h4>Visit Us</h4>
-            <p>123 Luxury Avenue, City Center<br>Guwahati, Assam 781001</p>
+            <p>5PHX+G6W, MD Shah Rd, Paltan Bazaar<br>Guwahati, Assam 781008</p>
           </div>
         </div>
         
@@ -340,7 +340,10 @@ require_once __DIR__ . '/includes/nav.php';
           </div>
           <div class="contact-detail-text">
             <h4>Call Us</h4>
-            <p><a href="tel:+911234567890">+91 1234 567 890</a></p>
+            <p>
+              <a href="tel:+916001232340">+91 60012 32340</a><br>
+              <a href="tel:+919281912340">+91 92819 12340</a>
+            </p>
           </div>
         </div>
         
@@ -350,10 +353,23 @@ require_once __DIR__ . '/includes/nav.php';
           </div>
           <div class="contact-detail-text">
             <h4>Email Us</h4>
-            <p><a href="mailto:booking@theaspirehotel.com">booking@theaspirehotel.com</a></p>
+            <p><a href="mailto:theaspirehotel1@gmail.com">theaspirehotel1@gmail.com</a></p>
           </div>
         </div>
         
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <i class="ph ph-whatsapp-logo"></i>
+          </div>
+          <div class="contact-detail-text">
+            <h4>WhatsApp</h4>
+            <p>
+              <a href="https://wa.me/916001232340">+91 60012 32340</a><br>
+              <a href="https://wa.me/919281912340">+91 92819 12340</a>
+            </p>
+          </div>
+        </div>
+
         <div class="contact-detail">
           <div class="contact-detail-icon">
             <i class="ph ph-clock"></i>
