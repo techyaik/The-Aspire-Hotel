@@ -72,11 +72,6 @@ require_once __DIR__ . '/includes/nav.php';
       <!-- Stats -->
       <div class="details-stats reveal">
         <div class="stat-box">
-          <i class="ph ph-bounding-box stat-icon"></i>
-          <span class="stat-label">Size</span>
-          <span class="stat-value"><?= htmlspecialchars($room['size']) ?></span>
-        </div>
-        <div class="stat-box">
           <i class="ph ph-bed stat-icon"></i>
           <span class="stat-label">Beds</span>
           <span class="stat-value"><?= htmlspecialchars($room['beds']) ?></span>
@@ -93,27 +88,17 @@ require_once __DIR__ . '/includes/nav.php';
         </div>
       </div>
 
-      <!-- Room Amenities -->
+      <!-- Merged Amenities -->
       <div class="amenities-container">
         <div class="amenities-header reveal">
-          <span class="amenities-eyebrow">PREMIUM FACILITIES</span>
-          <h3 class="amenities-title">Room Amenities</h3>
+          <span class="amenities-eyebrow">SERVICES & FACILITIES</span>
+          <h3 class="amenities-title">Room &amp; Hotel Amenities</h3>
         </div>
         <div class="amenities-grid">
-          <?php foreach ($room['roomAmenities'] as $amenity): ?>
-          <?= renderAmenity($amenity) ?>
-          <?php endforeach; ?>
-        </div>
-      </div>
-
-      <!-- Hotel Amenities -->
-      <div class="amenities-container">
-        <div class="amenities-header reveal">
-          <span class="amenities-eyebrow">HOTEL SERVICES</span>
-          <h3 class="amenities-title">Hotel Amenities</h3>
-        </div>
-        <div class="amenities-grid">
-          <?php foreach ($room['hotelAmenities'] as $amenity): ?>
+          <?php 
+          $allAmenities = array_merge($room['roomAmenities'], $room['hotelAmenities']);
+          foreach ($allAmenities as $amenity): 
+          ?>
           <?= renderAmenity($amenity) ?>
           <?php endforeach; ?>
         </div>
@@ -127,10 +112,6 @@ require_once __DIR__ . '/includes/nav.php';
         <p class="booking-room-name"><?= htmlspecialchars($room['name']) ?></p>
         <div class="booking-divider"></div>
         <div class="booking-meta">
-          <div class="booking-meta-item">
-            <i class="ph ph-bounding-box"></i>
-            <span><?= htmlspecialchars($room['size']) ?></span>
-          </div>
           <div class="booking-meta-item">
             <i class="ph ph-bed"></i>
             <span><?= htmlspecialchars($room['beds']) ?></span>
