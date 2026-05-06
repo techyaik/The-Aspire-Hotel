@@ -2537,3 +2537,125 @@ nav.scrolled .nav-hamburger span {
     gap: var(--space-4);
   }
 }
+/* ════════════════════════════════════════════════════════
+   DINING TIMINGS CARD
+════════════════════════════════════════════════════════ */
+.timings-card-new {
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: clamp(30px, 5vw, 60px);
+  margin-top: 40px;
+  box-shadow: var(--shadow-sm);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.timings-card-new::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light));
+}
+
+.timings-header-new {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timings-header-new .eyebrow {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.timings-header-new h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 3vw, 32px);
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.timings-list-new {
+  display: flex;
+  flex-direction: column;
+}
+
+.timing-row-new {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform var(--t-base) var(--ease-out);
+}
+
+.timing-row-new:last-child {
+  border-bottom: none;
+}
+
+.timing-row-new:hover {
+  transform: translateX(10px);
+}
+
+.timing-info-new {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.timing-icon-new {
+  width: 52px;
+  height: 52px;
+  background: var(--ink-inv);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 22px;
+  box-shadow: var(--shadow-xs);
+  border: 1px solid var(--glass-border);
+}
+
+.timing-label-new {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 2.5vw, 24px);
+  color: var(--ink);
+}
+
+.timing-value-new {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--gold-dark);
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: var(--gold-muted);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .timing-row-new {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .timing-value-new {
+    align-self: flex-start;
+  }
+  .timing-row-new:hover {
+    transform: none;
+  }
+}

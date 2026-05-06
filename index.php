@@ -33,7 +33,7 @@
 
     <div class="hero-bottom-bar">
       <div class="hero-op-info">
-        <div class="since-box">SINCE 1970 — 56 YEARS OF EXCELLENCE</div>
+        <div class="since-box">SINCE 2025 — 1 YEAR OF HOSPITALITY</div>
         <a href="#about" class="story-link">OUR STORY &nbsp;→</a>
       </div>
     </div>
@@ -77,11 +77,10 @@
         <span class="eyebrow">WELCOME TO THE ASPIRE</span>
         <h2 class="welcome-title">Luxury hotel in the<br />heart of the city.</h2>
         <p class="description">
-          The Aspire Hotel, located in the heart of Guwahati, Assam, offers
-          modern, luxurious rooms. Enjoy premium facilities, perfect for
-          relaxation and indulgence. Our friendly staff ensures a seamless,
-          personalised experience with stunning city views. Discover true
-          luxury and hospitality at The Aspire.
+          If you are looking for a luxury Hotel stay in Guwahati, The Aspire Hotel offers you with spacious rooms and
+          utmost hygiene care for memorable stay. We truly believe our Guests feel comfortable. We are privileged to
+          serve our guests. Located in Paltanbazar, Guwahati with a proximity of State Bus Stand and Guwahati Railway
+          Station.
         </p>
         <a href="#explore" class="btn-lara-read">DISCOVER MORE &nbsp;→</a>
       </div>
@@ -145,27 +144,32 @@
       <div class="slider-track embla__container">
 
         <?php foreach ($roomsData as $key => $room): ?>
-        <div class="slider-slide embla__slide">
-          <div class="room-card-large">
-            <div class="room-info-pane">
-              <h3 class="room-name-large"><?= htmlspecialchars($room['name']) ?></h3>
-              <p class="room-desc-large"><?= htmlspecialchars($room['description']) ?></p>
-              <div class="room-details-grid">
-                <div class="detail-item"><i class="ph ph-bed"></i><span><?= strtoupper(htmlspecialchars($room['beds'])) ?></span></div>
-                <div class="detail-item"><i class="ph ph-users"></i><span><?= strtoupper(htmlspecialchars($room['guests'])) ?></span></div>
-                <div class="detail-item"><i class="ph ph-map-trifold"></i><span><?= strtoupper(htmlspecialchars($room['view'])) ?></span></div>
-                <div class="detail-item"><i class="ph ph-prohibit"></i><span>NON-SMOKING</span></div>
+          <div class="slider-slide embla__slide">
+            <div class="room-card-large">
+              <div class="room-info-pane">
+                <h3 class="room-name-large"><?= htmlspecialchars($room['name']) ?></h3>
+                <p class="room-desc-large"><?= htmlspecialchars($room['description']) ?></p>
+                <div class="room-details-grid">
+                  <div class="detail-item"><i
+                      class="ph ph-bed"></i><span><?= strtoupper(htmlspecialchars($room['beds'])) ?></span></div>
+                  <div class="detail-item"><i
+                      class="ph ph-users"></i><span><?= strtoupper(htmlspecialchars($room['guests'])) ?></span></div>
+                  <div class="detail-item"><i
+                      class="ph ph-map-trifold"></i><span><?= strtoupper(htmlspecialchars($room['view'])) ?></span></div>
+                  <div class="detail-item"><i class="ph ph-prohibit"></i><span>NON-SMOKING</span></div>
+                </div>
+                <div class="room-actions-large">
+                  <a href="./room-details.php?type=<?= urlencode($key) ?>" class="btn-book-now"><i
+                      class="ph ph-calendar-check"></i>BOOK NOW</a>
+                  <a href="./room-details.php?type=<?= urlencode($key) ?>" class="btn-view-room">VIEW DETAILS &nbsp;→</a>
+                </div>
               </div>
-              <div class="room-actions-large">
-                <a href="./room-details.php?type=<?= urlencode($key) ?>" class="btn-book-now"><i class="ph ph-calendar-check"></i>BOOK NOW</a>
-                <a href="./room-details.php?type=<?= urlencode($key) ?>" class="btn-view-room">VIEW DETAILS &nbsp;→</a>
+              <div class="room-image-pane">
+                <img src="<?= htmlspecialchars($room['gallery'][0]['url']) ?>"
+                  alt="<?= htmlspecialchars($room['name']) ?>" />
               </div>
-            </div>
-            <div class="room-image-pane">
-              <img src="<?= htmlspecialchars($room['gallery'][0]['url']) ?>" alt="<?= htmlspecialchars($room['name']) ?>" />
             </div>
           </div>
-        </div>
         <?php endforeach; ?>
 
       </div>
@@ -190,80 +194,132 @@
     <div class="collection-slider embla reveal" id="facilities-slider">
       <div class="slider-track embla__container">
 
-        <!-- Spa -->
+        <!-- Railway & Hygiene -->
         <div class="slider-slide embla__slide">
           <div class="room-card-large">
             <div class="room-info-pane">
               <div class="room-price-tag">
-                <span class="price-label">Open Daily</span>
-                <span class="price-val">09 AM – 10 PM</span>
+                <span class="price-label">Location</span>
+                <span class="price-val">Strategic & Central</span>
               </div>
-              <h3 class="room-name-large">Spa &amp; Wellness</h3>
-              <p class="room-desc-large">Indulge in signature treatments and therapeutic massages designed to rejuvenate
-                your mind, body, and soul in a serene luxury environment.</p>
+              <h3 class="room-name-large">Prime Location &amp; Hygiene</h3>
+              <p class="room-desc-large">Ideally located near the Guwahati Railway Station. We offer spacious rooms and
+                prioritize utmost hygiene care for your comfortable and memorable stay.</p>
               <div class="room-details-grid">
-                <div class="detail-item"><i class="ph ph-flower"></i><span>6 TREATMENT ROOMS</span></div>
-                <div class="detail-item"><i class="ph ph-wind"></i><span>STEAM &amp; SAUNA</span></div>
-                <div class="detail-item"><i class="ph ph-leaf"></i><span>ORGANIC PRODUCTS</span></div>
+                <div class="detail-item"><i class="ph ph-train"></i><span>NEAR RAILWAY STATION</span></div>
+                <div class="detail-item"><i class="ph ph-sparkle"></i><span>HYGIENE CARE</span></div>
+                <div class="detail-item"><i class="ph ph-arrows-out"></i><span>SPACIOUS ROOMS</span></div>
               </div>
               <div class="room-actions-large no-res">
-                <a href="#contact" class="btn-view-room">EXPLORE SPA &nbsp;→</a>
+                <a href="#about" class="btn-view-room">EXPLORE MORE &nbsp;→</a>
               </div>
             </div>
             <div class="room-image-pane">
-              <img src="./assets/images/facility_spa.png" alt="Spa & Wellness" />
+              <img src="./assets/images/about_2.png" alt="Prime Location" />
             </div>
           </div>
         </div>
 
-        <!-- Dining -->
+        <!-- Tour Packages -->
         <div class="slider-slide embla__slide">
           <div class="room-card-large">
             <div class="room-info-pane">
               <div class="room-price-tag">
-                <span class="price-label">Fine Dining</span>
-                <span class="price-val">7 PM – 11 PM</span>
+                <span class="price-label">Travel Desk</span>
+                <span class="price-val">Explore North-East</span>
               </div>
-              <h3 class="room-name-large">The Grand Restaurant</h3>
-              <p class="room-desc-large">Savour curated global cuisines prepared by award-winning chefs. An intimate
-                atmosphere for the most discerning palates in the city.</p>
+              <h3 class="room-name-large">Tour &amp; Group Bookings</h3>
+              <p class="room-desc-large">Specialized tour packages and seamless arrangements for group bookings to
+                explore popular destinations across the North-East states.</p>
               <div class="room-details-grid">
-                <div class="detail-item"><i class="ph ph-fork-knife"></i><span>GLOBAL CUISINE</span></div>
-                <div class="detail-item"><i class="ph ph-chair"></i><span>80 SEATS</span></div>
-                <div class="detail-item"><i class="ph ph-door"></i><span>PRIVATE DINING</span></div>
+                <div class="detail-item"><i class="ph ph-users-three"></i><span>GROUP BOOKINGS</span></div>
+                <div class="detail-item"><i class="ph ph-map-trifold"></i><span>TOUR PACKAGES</span></div>
+                <div class="detail-item"><i class="ph ph-van"></i><span>TRAVEL ASSIST</span></div>
               </div>
               <div class="room-actions-large no-res">
-                <a href="#contact" class="btn-view-room">VIEW MENU &nbsp;→</a>
+                <a href="./offers.php" class="btn-view-room">VIEW OFFERS &nbsp;→</a>
               </div>
             </div>
             <div class="room-image-pane">
-              <img src="./assets/images/facility_dining.png" alt="Fine Dining" />
+              <img src="./assets/images/facility_tour.png" alt="Tour Packages" />
             </div>
           </div>
         </div>
 
-        <!-- Pool -->
+        <!-- Parking -->
         <div class="slider-slide embla__slide">
           <div class="room-card-large">
             <div class="room-info-pane">
               <div class="room-price-tag">
-                <span class="price-label">Rooftop Pool</span>
-                <span class="price-val">06 AM – 08 PM</span>
+                <span class="price-label">Convenience</span>
+                <span class="price-val">Hassle-Free Parking</span>
               </div>
-              <h3 class="room-name-large">Infinity Rooftop Pool</h3>
-              <p class="room-desc-large">Experience breathtaking city views from our temperature-controlled rooftop
-                pool. The perfect spot for twilight swimming and total relaxation.</p>
+              <h3 class="room-name-large">Ample Car Parking</h3>
+              <p class="room-desc-large">Enjoy peace of mind with our dedicated and ample car parking facilities,
+                ensuring safety and convenience for all our guests travelling by road.</p>
               <div class="room-details-grid">
-                <div class="detail-item"><i class="ph ph-mountains"></i><span>SKYLINE VIEWS</span></div>
-                <div class="detail-item"><i class="ph ph-thermometer-hot"></i><span>HEATED WATER</span></div>
-                <div class="detail-item"><i class="ph ph-wine"></i><span>POOLSIDE BAR</span></div>
+                <div class="detail-item"><i class="ph ph-car"></i><span>SECURE PARKING</span></div>
+                <div class="detail-item"><i class="ph ph-shield-check"></i><span>24/7 SAFETY</span></div>
+                <div class="detail-item"><i class="ph ph-clock"></i><span>EASY ACCESS</span></div>
               </div>
               <div class="room-actions-large no-res">
-                <a href="#contact" class="btn-view-room">RELAX BY THE POOL &nbsp;→</a>
+                <a href="#contact" class="btn-view-room">REACH US &nbsp;→</a>
               </div>
             </div>
             <div class="room-image-pane">
-              <img src="./assets/images/facility_pool.png" alt="Infinity Pool" />
+              <img src="./assets/images/facility_parking.png" alt="Ample Parking" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Rooftop Dining -->
+        <div class="slider-slide embla__slide">
+          <div class="room-card-large">
+            <div class="room-info-pane">
+              <div class="room-price-tag">
+                <span class="price-label">Rooftop View</span>
+                <span class="price-val">Dine with a View</span>
+              </div>
+              <h3 class="room-name-large">Rooftop Restaurant</h3>
+              <p class="room-desc-large">Experience breathtaking views of the city and hills from our rooftop. Savour
+                delicious, home-style food prepared fresh on request.</p>
+              <div class="room-details-grid">
+                <div class="detail-item"><i class="ph ph-mountains"></i><span>CITY &amp; HILL VIEWS</span></div>
+                <div class="detail-item"><i class="ph ph-house-line"></i><span>HOME STYLE FOOD</span></div>
+                <div class="detail-item"><i class="ph ph-chef-hat"></i><span>ON REQUEST</span></div>
+              </div>
+              <div class="room-actions-large no-res">
+                <a href="./dining.php" class="btn-view-room">VIEW DINING &nbsp;→</a>
+              </div>
+            </div>
+            <div class="room-image-pane">
+              <img src="./assets/images/facility_rooftop.png" alt="Rooftop Restaurant" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Events -->
+        <div class="slider-slide embla__slide">
+          <div class="room-card-large">
+            <div class="room-info-pane">
+              <div class="room-price-tag">
+                <span class="price-label">Events</span>
+                <span class="price-val">Celebrate with Us</span>
+              </div>
+              <h3 class="room-name-large">Parties &amp; Gatherings</h3>
+              <p class="room-desc-large">The perfect venue for birthday party celebrations and small get-together
+                arrangements, crafted with care for your special moments.</p>
+              <div class="room-details-grid">
+                <div class="detail-item"><i class="ph ph-cake"></i><span>BIRTHDAY PARTIES</span></div>
+                <div class="detail-item"><i class="ph ph-users-four"></i><span>GET TOGETHERS</span></div>
+                <div class="detail-item"><i class="ph ph-sparkle"></i><span>CUSTOM EVENTS</span></div>
+              </div>
+              <div class="room-actions-large no-res">
+                <a href="#contact" class="btn-view-room">BOOK AN EVENT &nbsp;→</a>
+              </div>
+            </div>
+            <div class="room-image-pane">
+              <img src="./assets/images/facility_events.png" alt="Celebrations" />
             </div>
           </div>
         </div>
@@ -305,32 +361,6 @@
   </section>
 
 
-  <!-- ═══════════════════════ NEWS & OFFERS ═══════════════════════ -->
-  <section class="news-offers" id="news-offers">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">LATEST UPDATES</span>
-        <h2 class="section-title">News &amp; Offers</h2>
-      </div>
-      <?php
-      $offers = [
-        ['badge' => 'Limited Time', 'title' => 'Early Bird Discount', 'desc' => 'Book 15 days in advance and save up to 20% on all room categories. A memorable stay at the best possible price.', 'link' => '#rooms', 'cta' => 'Book Now →'],
-        ['badge' => 'Corporate', 'title' => 'Business Stay Package', 'desc' => 'Exclusive rates for corporate travellers including complimentary breakfast, high-speed Wi-Fi, and express check-in.', 'link' => '#rooms', 'cta' => 'Enquire →'],
-        ['badge' => 'Weekend', 'title' => 'Weekend Getaway', 'desc' => 'Switch off and unwind. Special weekend packages with late checkout and complimentary room upgrades on availability.', 'link' => '#rooms', 'cta' => 'View Offer →'],
-      ];
-      ?>
-      <div class="offers-grid reveal">
-        <?php foreach ($offers as $i => $offer): ?>
-          <div class="offer-card">
-            <span class="offer-badge"><?= htmlspecialchars($offer['badge']) ?></span>
-            <h3 class="offer-title"><?= htmlspecialchars($offer['title']) ?></h3>
-            <p class="offer-desc"><?= htmlspecialchars($offer['desc']) ?></p>
-            <a href="<?= $offer['link'] ?>" class="offer-link"><?= $offer['cta'] ?></a>
-          </div>
-        <?php endforeach; ?>
-      </div>
-    </div>
-  </section>
 
 
   <!-- ═══════════════════════ MAP ═══════════════════════ -->
@@ -340,7 +370,8 @@
         <span class="eyebrow">FIND US</span>
         <h2 class="section-title">Our Location</h2>
         <p class="section-sub">
-          5PHX+G6W, MD Shah Rd, Paltan Bazaar, Guwahati, Assam 781008 — easily accessible from the airport and major landmarks.
+          5PHX+G6W, MD Shah Rd, Paltan Bazaar, Guwahati, Assam 781008 — easily accessible from the airport and major
+          landmarks.
         </p>
       </div>
       <div class="map-container reveal">

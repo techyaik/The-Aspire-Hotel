@@ -18,8 +18,9 @@ $contactLink = ($navPage === 'contact') ? './contact.php' : './contact.php';
   <ul class="nav-links" id="nav-links">
     <li><a href="<?= $base ?>#home">Home</a></li>
     <li><a href="<?= $base ?>#rooms">Rooms</a></li>
+    <li><a href="./dining.php">Dining</a></li>
     <li><a href="<?= $base ?>#explore">Explore</a></li>
-    <li><a href="<?= $base ?>#news-offers">News &amp; Offers</a></li>
+    <li><a href="./offers.php">Offers &amp; News</a></li>
     <li><a href="<?= $base ?>#map">Map</a></li>
     <li><a href="./contact.php">Contact Us</a></li>
   </ul>
@@ -34,8 +35,9 @@ $contactLink = ($navPage === 'contact') ? './contact.php' : './contact.php';
   <ul class="mobile-nav-links">
     <li><a href="<?= $base ?>#home">Home</a></li>
     <li><a href="<?= $base ?>#rooms">Rooms</a></li>
+    <li><a href="./dining.php">Dining</a></li>
     <li><a href="<?= $base ?>#explore">Explore</a></li>
-    <li><a href="<?= $base ?>#news-offers">News &amp; Offers</a></li>
+    <li><a href="./offers.php">Offers &amp; News</a></li>
     <li><a href="<?= $base ?>#map">Map</a></li>
     <li><a href="./contact.php">Contact Us</a></li>
   </ul>

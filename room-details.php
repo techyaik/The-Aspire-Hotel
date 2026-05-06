@@ -156,36 +156,10 @@ require_once __DIR__ . '/includes/nav.php';
 </main>
 
 
-<!-- ═══════════════════════ GALLERY ═══════════════════════ -->
-<section class="details-gallery">
-  <div class="container">
-    <div class="gallery-header-new reveal">
-      <span class="eyebrow">VISUAL EXPERIENCE</span>
-      <h2 class="section-title">Room &amp; Hotel Gallery</h2>
-    </div>
-    <div class="gallery-grid-new">
-      <?php foreach ($room['gallery'] as $idx => $img): ?>
-      <div class="gallery-item-new reveal" data-index="<?= $idx ?>">
-        <img
-          src="<?= htmlspecialchars($img['url']) ?>"
-          alt="<?= htmlspecialchars($img['title']) ?>"
-          loading="lazy"
-        />
-        <div class="gallery-label"><?= htmlspecialchars($img['title']) ?></div>
-      </div>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
-
-
-<!-- Pass gallery data to JS for lightbox -->
-<script>
-  window.roomGallery = <?= json_encode($room['gallery'], JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP) ?>;
-</script>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
-<?php require_once __DIR__ . '/includes/lightbox.php'; ?>
+
+
 <script src="./js/script.js"></script>
 </body>
 </html>
