@@ -63,6 +63,5 @@ $contactLink = ($navPage === 'contact') ? './contact.php' : './contact.php';
     <li><a href="<?= $base ?>#tariff">Tariff</a></li>
     <li><a href="./contact.php">Contact Us</a></li>
   </ul>
-  <a href="<?= $base ?>#rooms" class="nav-btn" style="margin-top:40px;display:inline-block">Reservation</a>
 </div>
 <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
