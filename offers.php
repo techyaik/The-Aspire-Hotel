@@ -105,7 +105,7 @@ require_once __DIR__ . '/includes/nav.php';
         <div class="offer-detail-info">
           <h3 class="offer-detail-title"><?= htmlspecialchars($offer['title']) ?></h3>
           <p class="offer-detail-desc"><?= htmlspecialchars($offer['desc']) ?></p>
-          <a href="https://wa.me/916001232340" target="_blank" rel="noopener" class="btn-lara-read">
+          <a href="https://wa.me/919181912340" target="_blank" rel="noopener" class="btn-lara-read">
             ENQUIRE NOW &nbsp;→
           </a>
         </div>
@@ -180,6 +180,7 @@ require_once __DIR__ . '/includes/nav.php';
 </style>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
+<?php require_once __DIR__ . '/includes/lightbox.php'; ?>
 <script src="./js/script.js"></script>
 </body>
 </html>

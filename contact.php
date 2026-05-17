@@ -244,8 +244,7 @@
             <div class="contact-detail-text">
               <h4>Call Us</h4>
               <p>
-                <a href="tel:+916001232340">+91 60012 32340</a><br>
-                <a href="tel:+918191234019">+91 81912 34019</a>
+                <a href="tel:+919181912340">+91 91819 12340</a>
               </p>
             </div>
           </div>
@@ -256,7 +255,7 @@
             </div>
             <div class="contact-detail-text">
               <h4>Email Us</h4>
-              <p><a href="mailto:theaspirehotel@gmail.com">theaspirehotel1@gmail.com</a></p>
+              <p><a href="mailto:theaspirehotel@gmail.com">theaspirehotel@gmail.com</a></p>
             </div>
           </div>
 
@@ -267,8 +266,7 @@
             <div class="contact-detail-text">
               <h4>WhatsApp</h4>
               <p>
-                <a href="https://wa.me/916001232340">+91 60012 32340</a><br>
-                <a href="https://wa.me/918191234019">+91 81912 34019</a>
+                <a href="https://wa.me/919181912340">+91 91819 12340</a>
               </p>
             </div>
           </div>

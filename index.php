@@ -124,7 +124,7 @@
     <div class="corporate-discount reveal">
       <p class="corp-sub">EXCLUSIVE PARTNERSHIPS</p>
       <h2 class="corporate-heading">Special Discount for Group Corporate Booking</h2>
-      <a href="#contact" class="corporate-btn">BOOK NOW &nbsp;→</a>
+      <a href="https://wa.me/919181912340?text=<?= urlencode("Hi, I would like to book a Group/Corporate package at The Aspire Hotel.") ?>" target="_blank" rel="noopener" class="corporate-btn">BOOK NOW &nbsp;→</a>
     </div>
   </section>
 
@@ -156,8 +156,8 @@
                   <div class="detail-item"><i class="ph ph-cigarette"></i><span>DESIGNATED SMOKING AREA</span></div>
                 </div>
                 <div class="room-actions-large">
-                  <a href="./room-details.php?type=<?= urlencode($key) ?>" class="btn-book-now"><i
-                      class="ph ph-calendar-check"></i>BOOK NOW</a>
+                  <a href="https://wa.me/919181912340?text=<?= urlencode("Hi, I would like to book a " . $room['name'] . " at The Aspire Hotel.") ?>" target="_blank" rel="noopener" class="btn-book-now"><i
+                      class="ph ph-whatsapp-logo"></i>BOOK NOW</a>
                   <a href="./room-details.php?type=<?= urlencode($key) ?>" class="btn-view-room">VIEW DETAILS &nbsp;→</a>
                 </div>
               </div>
@@ -257,7 +257,7 @@
         <!-- 09 -->
         <div class="f-card">
           <span class="f-num">09</span>
-          <div class="f-icon"><i class="ph ph-smoking-area"></i></div>
+          <div class="f-icon"><i class="ph ph-cigarette"></i></div>
           <h3 class="f-title">Smoking Zone</h3>
           <p class="f-desc">Designated comfortable areas for smoking, ensuring a pleasant atmosphere throughout the hotel.</p>
         </div>

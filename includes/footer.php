@@ -32,9 +32,9 @@ $base = (($navPage ?? '') === 'details' || ($navPage ?? '') === 'contact') ? './
         <h4 class="footer-title">CONTACT US</h4>
         <div class="contact-info">
           <p>Silver Aspire Tower, MD Shah Rd, Paltan Bazaar,<br />Guwahati, Assam 781008</p>
-          <p class="phone">+91 6001232340, +91 9181912340</p>
+          <p class="phone">+91 91819 12340</p>
           <p class="email">theaspirehotel@gmail.com</p>
-          <p class="whatsapp">WhatsApp: +91 9181912340</p>
+          <p class="whatsapp">WhatsApp: +91 91819 12340</p>
         </div>
       </div>
 

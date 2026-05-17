@@ -123,7 +123,7 @@ require_once __DIR__ . '/includes/nav.php';
           </div>
         </div>
         <div class="booking-divider"></div>
-        <a href="https://wa.me/916001232340" target="_blank" rel="noopener" class="btn-book-large">
+        <a href="https://wa.me/919181912340?text=<?= urlencode("Hi, I would like to book a " . $room['name'] . " at The Aspire Hotel.") ?>" target="_blank" rel="noopener" class="btn-book-large">
           <i class="ph ph-whatsapp-logo"></i>
           BOOK VIA WHATSAPP
         </a>
@@ -140,6 +140,7 @@ require_once __DIR__ . '/includes/nav.php';
 
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
+<?php require_once __DIR__ . '/includes/lightbox.php'; ?>
 
 
 <script src="./js/script.js"></script>

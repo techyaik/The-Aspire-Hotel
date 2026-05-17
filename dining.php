@@ -78,6 +78,7 @@ require_once __DIR__ . '/includes/nav.php';
 </main>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
+<?php require_once __DIR__ . '/includes/lightbox.php'; ?>
 <script src="./js/script.js"></script>
 </body>
 </html>
