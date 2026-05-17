@@ -3,7 +3,7 @@
 // 'home'    → anchor links on the same page
 // 'details' → links pointing back to index.php
 // 'contact' → links pointing to appropriate pages
-$navPage  = $navPage  ?? 'home';
+$navPage = $navPage ?? 'home';
 $navClass = $navClass ?? '';
 
 require_once __DIR__ . '/../data/rooms.php';
@@ -12,9 +12,9 @@ $base = ($navPage === 'details' || $navPage === 'contact') ? './index.php' : '';
 $contactLink = ($navPage === 'contact') ? './contact.php' : './contact.php';
 ?>
 <!-- NAV -->
-<nav id="main-nav"<?= $navClass ? ' class="' . $navClass . '"' : '' ?>>
+<nav id="main-nav" <?= $navClass ? ' class="' . $navClass . '"' : '' ?>>
   <a href="<?= $base ?>#home" class="nav-logo" id="nav-logo-link">
-    <i class="ph ph-sketch-logo" style="font-size:28px;margin-right:10px"></i>
+    <img src="./assets/images/LOGO1.png" alt="The Aspire Hotel Logo" class="nav-logo-home" />
     The Aspire Hotel
   </a>
   <ul class="nav-links" id="nav-links">

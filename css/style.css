@@ -500,15 +500,11 @@ nav.scrolled {
   white-space: nowrap;
   transition: color var(--t-slow) var(--ease-out);
 }
-
-nav.scrolled .nav-logo {
-  color: var(--text-main);
-}
-
-.nav-logo .ph {
-  font-size: 28px;
-  flex-shrink: 0;
-  transition: transform var(--t-base);
+.nav-logo-home {
+  height: clamp(18px, 1.8vw, 22px);
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .nav-links {

@@ -145,7 +145,6 @@
             <div class="room-card-large">
               <div class="room-info-pane">
                 <h3 class="room-name-large"><?= htmlspecialchars($room['name']) ?></h3>
-                <div class="room-price-large"><?= htmlspecialchars($room['price']) ?></div>
                 <p class="room-desc-large"><?= htmlspecialchars($room['description']) ?></p>
                 <div class="room-details-grid">
                   <div class="detail-item"><i
@@ -154,7 +153,7 @@
                       class="ph ph-users"></i><span><?= strtoupper(htmlspecialchars($room['guests'])) ?></span></div>
                   <div class="detail-item"><i
                       class="ph ph-map-trifold"></i><span><?= strtoupper(htmlspecialchars($room['view'])) ?></span></div>
-                  <div class="detail-item"><i class="ph ph-prohibit"></i><span>NON-SMOKING</span></div>
+                  <div class="detail-item"><i class="ph ph-cigarette"></i><span>DESIGNATED SMOKING AREA</span></div>
                 </div>
                 <div class="room-actions-large">
                   <a href="./room-details.php?type=<?= urlencode($key) ?>" class="btn-book-now"><i

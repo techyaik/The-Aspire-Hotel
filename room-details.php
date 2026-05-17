@@ -96,7 +96,7 @@ require_once __DIR__ . '/includes/nav.php';
         </div>
         <div class="amenities-grid">
           <?php 
-          $allAmenities = array_merge($room['roomAmenities'], $room['hotelAmenities']);
+          $allAmenities = array_merge($room['hotelAmenities'], $room['roomAmenities']);
           foreach ($allAmenities as $amenity): 
           ?>
           <?= renderAmenity($amenity) ?>
