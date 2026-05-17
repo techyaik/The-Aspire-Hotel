@@ -2,7 +2,7 @@
 $roomsData = [
     'standard-double' => [
         'name' => 'Standard Double Room',
-        'price' => '₹3,500',
+        'price' => '₹2,500 + G.S.T.',
         'description' => 'One queen bed with storage. Perfect for a comfortable and efficient stay.',
         'size' => '22 M²',
         'beds' => '1 Queen Bed',
@@ -27,9 +27,9 @@ $roomsData = [
         ],
     ],
 
-    'double-single' => [
-        'name' => 'Double Single Bedroom',
-        'price' => '₹4,000',
+    'standard-twin' => [
+        'name' => 'Standard Twin Room',
+        'price' => '₹2,600 + G.S.T.',
         'description' => 'Two single beds in a room for family and corporate guest. Versatile and convenient.',
         'size' => '24 M²',
         'beds' => '2 Single Beds',
@@ -57,7 +57,7 @@ $roomsData = [
 
     'deluxe-double' => [
         'name' => 'Deluxe Double Room',
-        'price' => '₹5,500',
+        'price' => '₹3,000 + G.S.T.',
         'description' => 'Spacious room with king size bed. Designed for those who appreciate extra space and luxury.',
         'size' => '32 M²',
         'beds' => '1 King Bed',
@@ -86,7 +86,7 @@ $roomsData = [
 
     'deluxe-family' => [
         'name' => 'Deluxe Family Room',
-        'price' => '₹6,500',
+        'price' => '₹3,200 + G.S.T.',
         'description' => 'Spacious room with one queen size and one single bed. Ideal for small families seeking comfort.',
         'size' => '38 M²',
         'beds' => '1 Queen Bed + 1 Single Bed',
@@ -112,9 +112,9 @@ $roomsData = [
         ],
     ],
 
-    'royale-deluxe-double' => [
-        'name' => 'Royale Deluxe Double Room',
-        'price' => '₹8,500',
+    'royale-deluxe' => [
+        'name' => 'Royale Deluxe Room',
+        'price' => '₹3,500 + G.S.T.',
         'description' => 'Floor to ceiling glass with excellent city view. One king bed. Experience ultimate luxury and skyline vistas.',
         'size' => '45 M²',
         'beds' => '1 King Bed',
@@ -143,9 +143,9 @@ $roomsData = [
         ],
     ],
 
-    'royale-deluxe-family' => [
-        'name' => 'Royale Deluxe Family Room',
-        'price' => '₹10,500',
+    'royale-family' => [
+        'name' => 'Royale Family Room',
+        'price' => '₹4,000 + G.S.T.',
         'description' => 'Floor to ceiling glass with excellent city view. One queen bed and one single bed for memorable stay of your family.',
         'size' => '52 M²',
         'beds' => '1 Queen Bed + 1 Single Bed',

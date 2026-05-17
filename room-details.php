@@ -110,6 +110,7 @@ require_once __DIR__ . '/includes/nav.php';
     <aside class="details-sidebar">
       <div class="booking-card reveal">
         <p class="booking-room-name"><?= htmlspecialchars($room['name']) ?></p>
+        <div class="booking-price"><?= htmlspecialchars($room['price']) ?></div>
         <div class="booking-divider"></div>
         <div class="booking-meta">
           <div class="booking-meta-item">

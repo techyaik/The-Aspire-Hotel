@@ -21,7 +21,6 @@
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
-      <div class="hero-stars">★★★★★</div>
       <h1 class="hero-title">THE ASPIRE HOTEL</h1>
       <div class="hero-divider"></div>
       <p class="hero-sub">
@@ -31,12 +30,6 @@
       <a href="#rooms" class="hero-explore" id="hero-explore-btn">EXPLORE ROOMS &nbsp;→</a>
     </div>
 
-    <div class="hero-bottom-bar">
-      <div class="hero-op-info">
-        <div class="since-box">SINCE 2025 — 1 YEAR OF HOSPITALITY</div>
-        <a href="#about" class="story-link">OUR STORY &nbsp;→</a>
-      </div>
-    </div>
   </section>
 
 
@@ -45,11 +38,11 @@
     <div class="features-grid">
       <?php
       $features = [
-        ['icon' => 'ph-map-pin', 'num' => '01', 'title' => 'Heart of the City', 'text' => "Ideally situated for easy access to landmarks, dining, and business centres."],
+        ['icon' => 'ph-map-pin', 'num' => '01', 'title' => 'Heart of the City', 'text' => "Ideally situated at Paltanbazar, near Guwahati Railway Station. Easy access to business district and various tourist destinations."],
         ['icon' => 'ph-sparkle', 'num' => '02', 'title' => 'Luxurious & Modern', 'text' => 'Elegantly appointed spaces blending contemporary design with timeless comfort.'],
         ['icon' => 'ph-hand-heart', 'num' => '03', 'title' => 'Atithi Devo Bhava', 'text' => 'Warm, personalised hospitality that treats every guest as an honoured visitor.'],
         ['icon' => 'ph-tag', 'num' => '04', 'title' => 'Best Price Guarantee', 'text' => 'Exceptional value with exclusive rates for direct bookings, always.'],
-        ['icon' => 'ph-buildings', 'num' => '05', 'title' => 'Corporate & Business', 'text' => 'Tailored packages, meeting facilities, and swift check-in for professionals.'],
+        ['icon' => 'ph-buildings', 'num' => '05', 'title' => 'Corporate & Business', 'text' => 'Tailored packages for your business stays and transfers.'],
       ];
       foreach ($features as $f): ?>
         <div class="feature-item reveal">
@@ -87,47 +80,51 @@
 
     </div>
 
-    <!-- RATINGS STRIP -->
-    <div class="ratings-row reveal">
-      <div class="ratings-container">
-
-        <div class="rating-item">
-          <div class="rating-logo">B.</div>
-          <div class="rating-info">
-            <div class="rating-val">4.9<span class="rating-sep">/</span>5 <span class="stars">★</span> <span
-                class="quality">Excellent</span></div>
-            <div class="rating-count">3.5K Reviews on Booking</div>
-          </div>
-        </div>
-
-        <div class="rating-divider"></div>
-
-        <div class="rating-item">
-          <div class="rating-logo brand-agoda">a</div>
-          <div class="rating-info">
-            <div class="rating-val">5<span class="rating-sep">/</span>5 <span class="stars">★</span> <span
-                class="quality">Excellent</span></div>
-            <div class="rating-count">4.1K Reviews on Agoda</div>
-          </div>
-        </div>
-
-        <div class="rating-divider"></div>
-
-        <div class="rating-item">
-          <div class="rating-logo brand-trip">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 .5C5.649.5.5 5.649.5 12c0 6.351 5.149 11.5 11.5 11.5s11.5-5.149 11.5-11.5C23.5 5.649 18.351.5 12 .5zM9 16c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2zm6 0c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2z" />
-            </svg>
-          </div>
-          <div class="rating-info">
-            <div class="rating-val">4.8<span class="rating-sep">/</span>5 <span class="stars">★</span> <span
-                class="quality">Very Good</span></div>
-            <div class="rating-count">2.4K Reviews on Tripadvisor</div>
-          </div>
-        </div>
-
+    <!-- TARIFF STRIP -->
+    <div class="tariff-row reveal" id="tariff">
+      <div class="tariff-header">
+        <span class="eyebrow" style="color: var(--gold); letter-spacing: 4px; font-weight: 600;">PRICING GUIDE</span>
+        <h2 class="tariff-heading">Room Tariff</h2>
       </div>
+      <div class="tariff-container">
+        <div class="tariff-item">
+          <span class="tariff-name">Royale Family Room</span>
+          <span class="tariff-dash"></span>
+          <span class="tariff-price">₹4,000<span class="tariff-gst">+ G.S.T.</span></span>
+        </div>
+        <div class="tariff-item">
+          <span class="tariff-name">Royale Deluxe Room</span>
+          <span class="tariff-dash"></span>
+          <span class="tariff-price">₹3,500<span class="tariff-gst">+ G.S.T.</span></span>
+        </div>
+        <div class="tariff-item">
+          <span class="tariff-name">Deluxe Family Room</span>
+          <span class="tariff-dash"></span>
+          <span class="tariff-price">₹3,200<span class="tariff-gst">+ G.S.T.</span></span>
+        </div>
+        <div class="tariff-item">
+          <span class="tariff-name">Deluxe Double Room</span>
+          <span class="tariff-dash"></span>
+          <span class="tariff-price">₹3,000<span class="tariff-gst">+ G.S.T.</span></span>
+        </div>
+        <div class="tariff-item">
+          <span class="tariff-name">Standard Double Room</span>
+          <span class="tariff-dash"></span>
+          <span class="tariff-price">₹2,500<span class="tariff-gst">+ G.S.T.</span></span>
+        </div>
+        <div class="tariff-item">
+          <span class="tariff-name">Standard Twin Room</span>
+          <span class="tariff-dash"></span>
+          <span class="tariff-price">₹2,600<span class="tariff-gst">+ G.S.T.</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CORPORATE DISCOUNT -->
+    <div class="corporate-discount reveal">
+      <p class="corp-sub">EXCLUSIVE PARTNERSHIPS</p>
+      <h2 class="corporate-heading">Special Discount for Group Corporate Booking</h2>
+      <a href="#contact" class="corporate-btn">BOOK NOW &nbsp;→</a>
     </div>
   </section>
 
@@ -148,6 +145,7 @@
             <div class="room-card-large">
               <div class="room-info-pane">
                 <h3 class="room-name-large"><?= htmlspecialchars($room['name']) ?></h3>
+                <div class="room-price-large"><?= htmlspecialchars($room['price']) ?></div>
                 <p class="room-desc-large"><?= htmlspecialchars($room['description']) ?></p>
                 <div class="room-details-grid">
                   <div class="detail-item"><i
@@ -188,8 +186,10 @@
   <section class="facilities-grid-section" id="services">
     <div class="container">
       <div class="rooms-header reveal">
-        <span class="eyebrow" style="color: var(--gold); letter-spacing: 4px; font-weight: 600;">MODERN AND COMFORTABLE</span>
-        <h2 class="section-title" style="font-family: var(--font-serif); font-size: 64px; margin-top: 10px;">Facilities and amenities</h2>
+        <span class="eyebrow" style="color: var(--gold); letter-spacing: 4px; font-weight: 600;">MODERN AND
+          COMFORTABLE</span>
+        <h2 class="section-title" style="font-family: var(--font-serif); font-size: 64px; margin-top: 10px;">Facilities
+          and amenities</h2>
       </div>
 
       <div class="f-grid reveal">
@@ -198,7 +198,8 @@
           <span class="f-num">01</span>
           <div class="f-icon"><i class="ph ph-train"></i></div>
           <h3 class="f-title">Prime Location</h3>
-          <p class="f-desc">Ideally located near the Guwahati Railway Station with utmost hygiene care for your stay.</p>
+          <p class="f-desc">Ideally located near the Guwahati Railway Station with utmost hygiene care for your stay.
+          </p>
         </div>
 
         <!-- 02 -->
@@ -222,7 +223,8 @@
           <span class="f-num">04</span>
           <div class="f-icon"><i class="ph ph-mountains"></i></div>
           <h3 class="f-title">Rooftop Dining</h3>
-          <p class="f-desc">Experience breathtaking city views and savour delicious home-style food fresh on request.</p>
+          <p class="f-desc">Experience breathtaking city views and savour delicious home-style food fresh on request.
+          </p>
         </div>
 
         <!-- 05 -->
@@ -230,7 +232,8 @@
           <span class="f-num">05</span>
           <div class="f-icon"><i class="ph ph-cake"></i></div>
           <h3 class="f-title">Event Hosting</h3>
-          <p class="f-desc">The perfect venue for birthday parties and small get-togethers with personalised service.</p>
+          <p class="f-desc">The perfect venue for birthday parties and small get-togethers with personalised service.
+          </p>
         </div>
 
         <!-- 06 -->
@@ -238,7 +241,8 @@
           <span class="f-num">06</span>
           <div class="f-icon"><i class="ph ph-clock"></i></div>
           <h3 class="f-title">24/7 Front Desk</h3>
-          <p class="f-desc">Our dedicated staff is here to assist you with any requests at any hour of the day or night.</p>
+          <p class="f-desc">Our dedicated staff is here to assist you with any requests at any hour of the day or night.
+          </p>
         </div>
 
         <!-- 07 -->
@@ -256,6 +260,22 @@
           <h3 class="f-title">In-room Dining</h3>
           <p class="f-desc">Enjoy our curated menu of home-style food delivered directly to your room on request.</p>
         </div>
+
+        <!-- 09 -->
+        <div class="f-card">
+          <span class="f-num">09</span>
+          <div class="f-icon"><i class="ph ph-smoking-area"></i></div>
+          <h3 class="f-title">Smoking Zone</h3>
+          <p class="f-desc">Designated comfortable areas for smoking, ensuring a pleasant atmosphere throughout the hotel.</p>
+        </div>
+
+        <!-- 10 -->
+        <div class="f-card">
+          <span class="f-num">10</span>
+          <div class="f-icon"><i class="ph ph-thermometer-cold"></i></div>
+          <h3 class="f-title">Air Conditioned</h3>
+          <p class="f-desc">All our rooms are fully air-conditioned to ensure your stay is comfortable and refreshing.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -265,12 +285,14 @@
       padding: 100px 0;
       background: #fff;
     }
+
     .f-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 20px;
       margin-top: 60px;
     }
+
     .f-card {
       background: #fff;
       border: 1px solid #eee;
@@ -279,10 +301,12 @@
       position: relative;
       transition: all 0.3s ease;
     }
+
     .f-card:hover {
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
       border-color: var(--gold);
     }
+
     .f-num {
       position: absolute;
       top: 15px;
@@ -292,30 +316,48 @@
       font-weight: 600;
       letter-spacing: 1px;
     }
+
     .f-icon {
       font-size: 42px;
       color: var(--gold);
       margin-bottom: 25px;
     }
+
     .f-title {
       font-family: var(--font-serif);
       font-size: 22px;
       margin-bottom: 15px;
       color: #1a1a1a;
     }
+
     .f-desc {
       font-size: 14px;
       color: #666;
       line-height: 1.6;
     }
+
+    @media (max-width: 1400px) {
+      .f-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
     @media (max-width: 1200px) {
-      .f-grid { grid-template-columns: repeat(3, 1fr); }
+      .f-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
+
     @media (max-width: 900px) {
-      .f-grid { grid-template-columns: repeat(2, 1fr); }
+      .f-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
+
     @media (max-width: 600px) {
-      .f-grid { grid-template-columns: 1fr; }
+      .f-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 
@@ -327,19 +369,68 @@
         <span class="eyebrow">DISCOVER MORE</span>
         <h2 class="section-title">Explore The Aspire Hotel</h2>
       </div>
-      <div class="gallery-grid reveal">
-        <div class="gallery-cell gallery-cell-large">
-          <img src="./assets/images/lobby_gallery.png" alt="Grand Lobby" />
-          <div class="gallery-label">Grand Lobby</div>
+      <div class="gallery-slider-container reveal">
+        <!-- Swiper -->
+        <div class="swiper gallery-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="gallery-slide-inner">
+                <img src="./assets/images/lobby_gallery.png" alt="Grand Lobby" />
+                <div class="gallery-label">Grand Lobby</div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="gallery-slide-inner">
+                <img src="./assets/images/gallery_pool.png" alt="Infinity Pool" />
+                <div class="gallery-label">Infinity Pool</div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="gallery-slide-inner">
+                <img src="./assets/images/room_deluxe.png" alt="City Views" />
+                <div class="gallery-label">City Views</div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="gallery-slide-inner">
+                <img src="./assets/images/hero_1.png" alt="Modern Suites" />
+                <div class="gallery-label">Modern Suites</div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="gallery-slide-inner">
+                <img src="./assets/images/about_2.png" alt="Luxury Interior" />
+                <div class="gallery-label">Luxury Interior</div>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+              <div class="gallery-slide-inner">
+                <img src="./assets/images/room_standard_coll.png" alt="Cozy Rooms" />
+                <div class="gallery-label">Cozy Rooms</div>
+              </div>
+            </div>
+            <!-- Slide 7 -->
+            <div class="swiper-slide">
+              <div class="gallery-slide-inner">
+                <img src="./assets/images/facility_tour.png" alt="Exceptional Service" />
+                <div class="gallery-label">Exceptional Service</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <div class="gallery-cell gallery-cell-tall">
-          <img src="./assets/images/room_deluxe.png" alt="City Views" />
-          <div class="gallery-label">City Views</div>
-        </div>
-        <div class="gallery-cell gallery-cell-wide">
-          <img src="./assets/images/gallery_pool.png" alt="Infinity Pool" />
-          <div class="gallery-label">Infinity Pool</div>
-        </div>
+        
+        <!-- Add Pagination outside for better positioning -->
+        <div class="swiper-pagination gallery-pagination"></div>
       </div>
     </div>
   </section>
@@ -347,26 +438,7 @@
 
 
 
-  <!-- ═══════════════════════ MAP ═══════════════════════ -->
-  <section class="map-section" id="map">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">FIND US</span>
-        <h2 class="section-title">Our Location</h2>
-        <p class="section-sub">
-          5PHX+G6W, MD Shah Rd, Paltan Bazaar, Guwahati, Assam 781008 — easily accessible from the airport and major
-          landmarks.
-        </p>
-      </div>
-      <div class="map-container reveal">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57408.42095597567!2d91.7086485!3d26.1445169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5948b879f007%3A0x6f5f3e3a069a6a7b!2sGuwahati%2C%20Assam!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-          width="100%" height="450" style="border:0" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" title="The Aspire Hotel Location – Guwahati">
-        </iframe>
-      </div>
-    </div>
-  </section>
+
 
 
   <?php require_once __DIR__ . '/includes/footer.php'; ?>

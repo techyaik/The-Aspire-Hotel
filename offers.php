@@ -66,7 +66,7 @@ require_once __DIR__ . '/includes/nav.php';
         'badge' => 'Wildlife',
         'title' => 'Kaziranga Tour Package',
         'desc'  => 'A thrilling journey to Kaziranga National Park, a UNESCO World Heritage site. Home to the world-famous Great One-Horned Rhinoceros, Kaziranga offers an unparalleled wildlife experience.',
-        'image' => './assets/images/tour_kaziranga.png'
+        'image' => './assets/images/tour_kaziranga_tiger.png'
       ],
       [
         'badge' => 'Wildlife',
@@ -90,7 +90,7 @@ require_once __DIR__ . '/includes/nav.php';
         'badge' => 'International',
         'title' => 'Bhutan Border Tour',
         'desc'  => 'A day visit to Samdrup Jhonkar in Bhutan. Experience the unique culture and savor authentic local Bhutanese cuisine like Thukpa and Ema Datshi.',
-        'image' => './assets/images/tour_bhutan.png'
+        'image' => './assets/images/Bhutan Tour.jpeg'
       ]
     ];
     ?>

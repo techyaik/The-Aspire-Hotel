@@ -1,50 +1,41 @@
+<?php
+$base = (($navPage ?? '') === 'details' || ($navPage ?? '') === 'contact') ? './index.php' : '';
+?>
 <footer class="lara-footer" id="contact">
   <div class="footer-container">
     <div class="footer-top">
 
       <div class="footer-col brand-col">
-        <a href="#" class="footer-logo">THE ASPIRE</a>
+        <a href="<?= $base ?>#home" class="footer-logo">THE ASPIRE</a>
         <p class="brand-text">
           Excellence in hospitality since 1970. We redefine luxury through
-          personalized experiences and architectural masterpiece in the
+          personalized experiences and architectural masterpieces in the
           heart of the city.
         </p>
-        <div class="social-links">
-          <a href="#" aria-label="Facebook">FB</a>
-          <a href="#" aria-label="Instagram">IG</a>
-          <a href="#" aria-label="Twitter">TW</a>
-          <a href="#" aria-label="LinkedIn">LN</a>
-        </div>
       </div>
 
-      <div class="footer-col">
+      <div class="footer-col links-col">
         <h4 class="footer-title">QUICK LINKS</h4>
         <ul class="footer-nav">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#rooms">Rooms &amp; Suites</a></li>
-          <li><a href="#services">Our Services</a></li>
-          <li><a href="#explore">Gallery</a></li>
-          <li><a href="#news-offers">News &amp; Offers</a></li>
+          <li><a href="<?= $base ?>#home">Home</a></li>
+          <li><a href="<?= $base ?>#about">About Us</a></li>
+          <li><a href="<?= $base ?>#rooms">Rooms &amp; Suites</a></li>
+          <li><a href="./dining.php">Dining</a></li>
+          <li><a href="<?= $base ?>#explore">Explore</a></li>
+          <li><a href="./offers.php">Offers</a></li>
+          <li><a href="<?= $base ?>#tariff">Tariff</a></li>
+          <li><a href="./contact.php">Contact Us</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4 class="footer-title">CONTACT US</h4>
         <div class="contact-info">
-          <p>5PHX+G6W, MD Shah Rd, Paltan Bazaar,<br />Guwahati, Assam 781008</p>
-          <p class="phone">+91 6001232340, +91 9281912340</p>
-          <p class="email">theaspirehotel1@gmail.com</p>
-          <p class="whatsapp">WhatsApp: +91 6001232340</p>
+          <p>Silver Aspire Tower, MD Shah Rd, Paltan Bazaar,<br />Guwahati, Assam 781008</p>
+          <p class="phone">+91 6001232340, +91 9181912340</p>
+          <p class="email">theaspirehotel@gmail.com</p>
+          <p class="whatsapp">WhatsApp: +91 9181912340</p>
         </div>
-      </div>
-
-      <div class="footer-col newsletter-col">
-        <h4 class="footer-title">NEWSLETTER</h4>
-        <p>Subscribe to receive exclusive offers and luxury updates.</p>
-        <form class="newsletter-form" method="post" action="#">
-          <input type="email" name="email" placeholder="Your email address" required />
-          <button type="submit">JOIN</button>
-        </form>
       </div>
 
     </div>

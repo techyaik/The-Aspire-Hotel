@@ -97,6 +97,50 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', openMenu);
     menuClose.addEventListener('click', closeMenu);
     menuOverlay.addEventListener('click', closeMenu);
-    document.querySelectorAll('.mobile-nav-links a').forEach(a => a.addEventListener('click', closeMenu));
+    
+    // Updated listener for mobile links: don't close if it has subnav or is a toggle
+    document.querySelectorAll('.mobile-nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        closeMenu();
+      });
+    });
+
+    // Mobile Subnav Toggle
+    document.querySelectorAll('.subnav-toggle').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const parent = btn.closest('.has-subnav');
+        parent.classList.toggle('open');
+      });
+    });
+  }
+
+
+
+  // ── SwiperJS: Gallery ──
+  if (document.querySelector('.gallery-swiper')) {
+    new Swiper('.gallery-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.gallery-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
   }
 });

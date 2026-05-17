@@ -12,3 +12,6 @@ $pageDescription = $pageDescription ?? 'The Aspire Hotel, located in the heart o
 <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 <!-- Embla Carousel CDN -->
 <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+<!-- SwiperJS CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
