@@ -43,7 +43,7 @@ $base = (($navPage ?? '') === 'details' || ($navPage ?? '') === 'contact') ? './
       <p>&copy; <?= date('Y') ?> The Aspire Hotel. All Rights Reserved.</p>
       <div class="legal-links">
         <a href="#">Privacy Policy</a>
-        <a href="#">Terms &amp; Conditions</a>
+        <a href="./terms.php">Terms &amp; Conditions</a>
       </div>
     </div>
   </div>
