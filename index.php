@@ -270,7 +270,8 @@
           <p class="f-desc">All our rooms are fully air-conditioned to ensure your stay is comfortable and refreshing.</p>
         </div>
       </div>
-
+    </div>
+  </section>
 
   <!-- ═══════════════════════ GALLERY ═══════════════════════ -->
   <section class="explore" id="explore">

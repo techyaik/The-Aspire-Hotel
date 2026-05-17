@@ -6,7 +6,7 @@ $base = (($navPage ?? '') === 'details' || ($navPage ?? '') === 'contact') ? './
     <div class="footer-top">
 
       <div class="footer-col brand-col">
-        <a href="<?= $base ?>#home" class="footer-logo">THE ASPIRE</a>
+        <div class="footer-logo">THE ASPIRE</div>
         <p class="brand-text">
           Excellence in hospitality since 1970. We redefine luxury through
           personalized experiences and architectural masterpieces in the
