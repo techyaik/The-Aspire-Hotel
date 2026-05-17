@@ -490,18 +490,41 @@ nav.scrolled {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: var(--font-serif);
-  font-size: clamp(16px, 1.5vw, 20px);
-  font-weight: 500;
   color: var(--ink-inv);
-  letter-spacing: 2px;
-  text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   transition: color var(--t-slow) var(--ease-out);
 }
+
+nav.scrolled .nav-logo {
+  color: var(--text-main);
+}
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-logo-title {
+  font-family: var(--font-serif);
+  font-size: clamp(16px, 1.5vw, 20px);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav-logo-subtitle {
+  font-family: var(--font-sans);
+  font-size: clamp(9px, 0.7vw, 11px);
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 2px;
+}
+
 .nav-logo-home {
-  height: clamp(18px, 1.8vw, 22px);
+  height: clamp(28px, 3vw, 36px);
   width: auto;
   display: block;
   object-fit: contain;
@@ -1104,6 +1127,7 @@ nav.scrolled .nav-hamburger span {
   padding: 80px 0;
   border-top: 1px solid rgba(201, 169, 98, 0.15);
   position: relative;
+  overflow: hidden;
 }
 
 /* Soft gold background glow effect behind the section */
@@ -1295,6 +1319,87 @@ nav.scrolled .nav-hamburger span {
 .facilities-section {
   background: var(--ink-inv);
   padding: var(--section-padding) var(--container-px);
+}
+
+.facilities-grid-section {
+  padding: var(--section-padding) var(--container-px);
+  background: var(--surface);
+}
+
+.f-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.f-card {
+  background: var(--ink-inv);
+  border: 1px solid var(--glass-border);
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: var(--radius-sm);
+}
+
+.f-card:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.f-num {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 11px;
+  color: var(--glass-border);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.f-icon {
+  font-size: 42px;
+  color: var(--gold);
+  margin-bottom: 25px;
+}
+
+.f-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--ink);
+}
+
+.f-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 1400px) {
+  .f-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .f-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .f-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .f-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .rooms-header {
@@ -2531,8 +2636,8 @@ nav.scrolled .nav-hamburger span {
     -webkit-backdrop-filter: blur(14px);
   }
 
-  .nav-links,
-  .nav-btn {
+  nav .nav-links,
+  nav .nav-btn {
     display: none !important;
   }
 
@@ -2563,6 +2668,11 @@ nav.scrolled .nav-hamburger span {
   /* Welcome visuals */
   .welcome-visuals {
     min-height: auto;
+    flex-basis: 100%;
+  }
+  
+  .welcome-content {
+    flex-basis: 100%;
   }
 
   .welcome-image-single {
@@ -2622,6 +2732,10 @@ nav.scrolled .nav-hamburger span {
 
   .collection-slider .slider-slide {
     padding: 0 16px;
+  }
+  
+  .corporate-discount {
+    padding: 60px 20px;
   }
 }
 
@@ -2729,6 +2843,17 @@ nav.scrolled .nav-hamburger span {
 
   .feature-item:first-child {
     border-top: none;
+  }
+  
+  .tariff-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 12px;
+  }
+  
+  .tariff-dash {
+    display: none;
   }
 
   .footer-bottom {

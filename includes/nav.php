@@ -15,7 +15,10 @@ $contactLink = ($navPage === 'contact') ? './contact.php' : './contact.php';
 <nav id="main-nav" <?= $navClass ? ' class="' . $navClass . '"' : '' ?>>
   <a href="<?= $base ?>#home" class="nav-logo" id="nav-logo-link">
     <img src="./assets/images/LOGO1.png" alt="The Aspire Hotel Logo" class="nav-logo-home" />
-    The Aspire Hotel
+    <span class="nav-logo-text">
+      <span class="nav-logo-title">The Aspire Hotel</span>
+      <span class="nav-logo-subtitle">Guwahati</span>
+    </span>
   </a>
   <ul class="nav-links" id="nav-links">
     <li><a href="<?= $base ?>#home">Home</a></li>

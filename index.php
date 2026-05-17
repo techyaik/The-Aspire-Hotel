@@ -185,10 +185,8 @@
   <section class="facilities-grid-section" id="services">
     <div class="container">
       <div class="rooms-header reveal">
-        <span class="eyebrow" style="color: var(--gold); letter-spacing: 4px; font-weight: 600;">MODERN AND
-          COMFORTABLE</span>
-        <h2 class="section-title" style="font-family: var(--font-serif); font-size: 64px; margin-top: 10px;">Facilities
-          and amenities</h2>
+        <span class="eyebrow" style="color: var(--gold); letter-spacing: 4px; font-weight: 600;">MODERN AND COMFORTABLE</span>
+        <h2 class="section-title" style="margin-top: 10px;">Facilities and amenities</h2>
       </div>
 
       <div class="f-grid reveal">
@@ -197,8 +195,7 @@
           <span class="f-num">01</span>
           <div class="f-icon"><i class="ph ph-train"></i></div>
           <h3 class="f-title">Prime Location</h3>
-          <p class="f-desc">Ideally located near the Guwahati Railway Station with utmost hygiene care for your stay.
-          </p>
+          <p class="f-desc">Ideally located near the Guwahati Railway Station with utmost hygiene care for your stay.</p>
         </div>
 
         <!-- 02 -->
@@ -222,8 +219,7 @@
           <span class="f-num">04</span>
           <div class="f-icon"><i class="ph ph-mountains"></i></div>
           <h3 class="f-title">Rooftop Dining</h3>
-          <p class="f-desc">Experience breathtaking city views and savour delicious home-style food fresh on request.
-          </p>
+          <p class="f-desc">Experience breathtaking city views and savour delicious home-style food fresh on request.</p>
         </div>
 
         <!-- 05 -->
@@ -231,8 +227,7 @@
           <span class="f-num">05</span>
           <div class="f-icon"><i class="ph ph-cake"></i></div>
           <h3 class="f-title">Event Hosting</h3>
-          <p class="f-desc">The perfect venue for birthday parties and small get-togethers with personalised service.
-          </p>
+          <p class="f-desc">The perfect venue for birthday parties and small get-togethers with personalised service.</p>
         </div>
 
         <!-- 06 -->
@@ -240,8 +235,7 @@
           <span class="f-num">06</span>
           <div class="f-icon"><i class="ph ph-clock"></i></div>
           <h3 class="f-title">24/7 Front Desk</h3>
-          <p class="f-desc">Our dedicated staff is here to assist you with any requests at any hour of the day or night.
-          </p>
+          <p class="f-desc">Our dedicated staff is here to assist you with any requests at any hour of the day or night.</p>
         </div>
 
         <!-- 07 -->
@@ -276,89 +270,6 @@
           <p class="f-desc">All our rooms are fully air-conditioned to ensure your stay is comfortable and refreshing.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <style>
-    .facilities-grid-section {
-      padding: 100px 0;
-      background: #fff;
-    }
-
-    .f-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
-      margin-top: 60px;
-    }
-
-    .f-card {
-      background: #fff;
-      border: 1px solid #eee;
-      padding: 40px 30px;
-      text-align: center;
-      position: relative;
-      transition: all 0.3s ease;
-    }
-
-    .f-card:hover {
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      border-color: var(--gold);
-    }
-
-    .f-num {
-      position: absolute;
-      top: 15px;
-      left: 20px;
-      font-size: 11px;
-      color: #ccc;
-      font-weight: 600;
-      letter-spacing: 1px;
-    }
-
-    .f-icon {
-      font-size: 42px;
-      color: var(--gold);
-      margin-bottom: 25px;
-    }
-
-    .f-title {
-      font-family: var(--font-serif);
-      font-size: 22px;
-      margin-bottom: 15px;
-      color: #1a1a1a;
-    }
-
-    .f-desc {
-      font-size: 14px;
-      color: #666;
-      line-height: 1.6;
-    }
-
-    @media (max-width: 1400px) {
-      .f-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-
-    @media (max-width: 1200px) {
-      .f-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    @media (max-width: 900px) {
-      .f-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .f-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
 
 
   <!-- ═══════════════════════ GALLERY ═══════════════════════ -->
