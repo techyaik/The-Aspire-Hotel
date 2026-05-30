@@ -62,7 +62,7 @@
 
       <div class="welcome-visuals reveal">
         <div class="welcome-image-single">
-          <img src="./assets/images/about_2.png" alt="Luxury room" />
+          <img src="./assets/images/AspireHotel.jpeg" alt="Luxury room" />
         </div>
       </div>
 
