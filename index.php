@@ -289,28 +289,28 @@
             <div class="swiper-slide">
               <div class="gallery-slide-inner">
                 <img src="./assets/images/Slider1.jpeg" alt="Grand Lobby" />
-                <div class="gallery-label">Grand Lobby</div>
+               
               </div>
             </div>
             <!-- Slide 2 -->
             <div class="swiper-slide">
               <div class="gallery-slide-inner">
                 <img src="./assets/images/Slider2.jpeg" alt="Infinity Pool" />
-                <div class="gallery-label">Infinity Pool</div>
+              
               </div>
             </div>
             <!-- Slide 3 -->
             <div class="swiper-slide">
               <div class="gallery-slide-inner">
                 <img src="./assets/images/Slider3.jpeg" alt="City Views" />
-                <div class="gallery-label">City Views</div>
+                
               </div>
             </div>
             <!-- Slide 4 -->
             <div class="swiper-slide">
               <div class="gallery-slide-inner">
                 <img src="./assets/images/Slider4.jpeg" alt="Modern Suites" />
-                <div class="gallery-label">Modern Suites</div>
+                
               </div>
             </div>
 
