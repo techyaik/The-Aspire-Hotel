@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/data/rooms.php';
+require_once __DIR__ . '/includes/room-images.php';
 
 $type = isset($_GET['type']) ? $_GET['type'] : 'standard-double';
 if (!array_key_exists($type, $roomsData)) {
@@ -38,7 +39,7 @@ require_once __DIR__ . '/includes/nav.php';
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
 <section class="details-hero">
   <img
-    src="<?= htmlspecialchars($room['gallery'][0]['url']) ?>"
+    src="<?= htmlspecialchars(resolveRoomImage($room, $room['gallery'][0]['url'])) ?>"
     alt="<?= htmlspecialchars($room['name']) ?>"
     class="details-hero-img"
   />

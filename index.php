@@ -131,6 +131,7 @@
 
   <!-- ═══════════════════════ ROOMS COLLECTION ═══════════════════════ -->
   <?php require_once __DIR__ . '/data/rooms.php'; ?>
+  <?php require_once __DIR__ . '/includes/room-images.php'; ?>
   <section class="rooms-section" id="rooms">
     <div class="rooms-header reveal">
       <span class="eyebrow">EXQUISITE AND LUXURIOUS</span>
@@ -162,7 +163,7 @@
                 </div>
               </div>
               <div class="room-image-pane">
-                <img src="<?= htmlspecialchars($room['gallery'][0]['url']) ?>"
+                <img src="<?= htmlspecialchars(resolveRoomImage($room, $room['gallery'][0]['url'])) ?>"
                   alt="<?= htmlspecialchars($room['name']) ?>" />
               </div>
             </div>
