@@ -121,13 +121,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── SwiperJS: Gallery ──
   if (document.querySelector('.gallery-swiper')) {
     new Swiper('.gallery-swiper', {
-      slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerView: 1.15,
+      spaceBetween: 24,
       loop: true,
       centeredSlides: true,
+      grabCursor: true,
       autoplay: {
-        delay: 3500,
+        delay: 4000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       pagination: {
         el: '.gallery-pagination',
@@ -138,8 +140,9 @@ document.addEventListener('DOMContentLoaded', () => {
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 }
+        640: { slidesPerView: 1.5, spaceBetween: 24 },
+        768: { slidesPerView: 2.2, spaceBetween: 28 },
+        1024: { slidesPerView: 2.8, spaceBetween: 30 }
       }
     });
   }

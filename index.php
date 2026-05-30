@@ -313,27 +313,7 @@
                 <div class="gallery-label">Modern Suites</div>
               </div>
             </div>
-            <!-- Slide 5 -->
-            <div class="swiper-slide">
-              <div class="gallery-slide-inner">
-                <img src="./assets/images/about_2.png" alt="Luxury Interior" />
-                <div class="gallery-label">Luxury Interior</div>
-              </div>
-            </div>
-            <!-- Slide 6 -->
-            <div class="swiper-slide">
-              <div class="gallery-slide-inner">
-                <img src="./assets/images/room_standard_coll.png" alt="Cozy Rooms" />
-                <div class="gallery-label">Cozy Rooms</div>
-              </div>
-            </div>
-            <!-- Slide 7 -->
-            <div class="swiper-slide">
-              <div class="gallery-slide-inner">
-                <img src="./assets/images/facility_tour.png" alt="Exceptional Service" />
-                <div class="gallery-label">Exceptional Service</div>
-              </div>
-            </div>
+
           </div>
           
           <!-- Add Navigation -->
