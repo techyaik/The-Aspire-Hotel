@@ -9,8 +9,8 @@ $roomsData = [
         'guests' => '2 Adults + 1 Child',
         'view' => 'City View',
         'gallery' => [
-            ['url' => './assets/images/room_standard_coll.png', 'title' => 'Standard Double Main'],
-            ['url' => './assets/images/royale_room_gallery.png', 'title' => 'Cozy Interior'],
+            ['url' => './assets/images/Standard Double Room1.jpeg', 'title' => 'Standard Double Room'],
+            ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],
@@ -37,8 +37,8 @@ $roomsData = [
         'guests' => '2 Adults + 1 Child',
         'view' => 'Street View',
         'gallery' => [
-            ['url' => './assets/images/room_royale_2.png', 'title' => 'Double Single Main'],
-            ['url' => './assets/images/washroom_gallery.png', 'title' => 'Modern Washroom'],
+            ['url' => './assets/images/Standard Twin Room.jpeg', 'title' => 'Standard Twin Room'],
+            ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],
@@ -65,8 +65,8 @@ $roomsData = [
         'guests' => '2 Adults + 1 Child',
         'view' => 'City View',
         'gallery' => [
-            ['url' => './assets/images/room_deluxe_coll.png', 'title' => 'Deluxe Double Main'],
-            ['url' => './assets/images/premium_room_gallery.png', 'title' => 'Elegant Decor'],
+            ['url' => './assets/images/Deluxe Double Room.jpeg', 'title' => 'Deluxe Double Room'],
+            ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],
@@ -93,8 +93,8 @@ $roomsData = [
         'guests' => '3 Adults + 1 Child',
         'view' => 'City View',
         'gallery' => [
-            ['url' => './assets/images/hero_1.png', 'title' => 'Deluxe Family Main'],
-            ['url' => './assets/images/room_premium_2.png', 'title' => 'Spacious Area'],
+            ['url' => './assets/images/Deluxe Family Room.jpeg', 'title' => 'Deluxe Family Room'],
+            ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],
@@ -121,8 +121,8 @@ $roomsData = [
         'guests' => '2 Adults + 1 Child',
         'view' => 'Skyline View (Floor-to-ceiling)',
         'gallery' => [
-            ['url' => './assets/images/room_suite_coll.png', 'title' => 'Royale Deluxe Main'],
-            ['url' => './assets/images/deluxe_room_gallery.png', 'title' => 'Panoramic View'],
+            ['url' => './assets/images/Royale Deluxe Room.jpeg', 'title' => 'Royale Deluxe Room'],
+            ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],
@@ -149,8 +149,8 @@ $roomsData = [
         'guests' => '3 Adults + 1 Child',
         'view' => 'Skyline View (Floor-to-ceiling)',
         'gallery' => [
-            ['url' => './assets/images/room_deluxe.png', 'title' => 'Royale Family Main'],
-            ['url' => './assets/images/room_deluxe_2.png', 'title' => 'Luxury Suite'],
+            ['url' => './assets/images/Royale Family Room.jpeg', 'title' => 'Royale Family Room'],
+            ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],

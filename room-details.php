@@ -11,7 +11,7 @@ $roomHeroImages = [
     'standard-double' => './assets/images/Standard Double Room.jpeg',
     'standard-twin'   => './assets/images/Standard Twin Room.jpeg',
     'deluxe-double'   => './assets/images/Deluxe Double Room.jpeg',
-    'deluxe-family'   => './assets/images/Deluxe Family Room .jpeg',
+    'deluxe-family'   => './assets/images/Deluxe Family Room.jpeg',
     'royale-deluxe'   => './assets/images/Royale Deluxe Room.jpeg',
     'royale-family'   => './assets/images/Royale Family Room.jpeg',
 ];
