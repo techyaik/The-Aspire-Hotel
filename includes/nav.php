@@ -9,7 +9,6 @@ $navClass = $navClass ?? '';
 require_once __DIR__ . '/../data/rooms.php';
 
 $base = ($navPage === 'details' || $navPage === 'contact' || $navPage === 'gallery') ? './index.php' : '';
-$contactLink = ($navPage === 'contact') ? './contact.php' : './contact.php';
 ?>
 <!-- NAV -->
 <nav id="main-nav" <?= $navClass ? ' class="' . $navClass . '"' : '' ?>>

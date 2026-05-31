@@ -22,7 +22,7 @@ function build_image_map(): array {
     $dir = __DIR__ . '/../assets/images';
     $patterns = ["/*.jpg", "/*.jpeg", "/*.png", "/*.webp", "/*.gif"]; 
     foreach ($patterns as $p) {
-        foreach (glob($dir . $p, GLOB_BRACE) as $file) {
+        foreach (glob($dir . $p) as $file) {
             $base = pathinfo($file, PATHINFO_FILENAME);
             $key = normalize_for_match($base);
             // store web path relative to project root
@@ -62,7 +62,7 @@ function resolveRoomImage(array $room, ?string $default = null): string {
     }
 
     // final fallback: a generic placeholder if nothing else
-    return './assets/images/hero_1.png';
+    return './assets/images/Slider1.jpeg';
 }
 
 ?>

@@ -18,7 +18,7 @@ require_once __DIR__ . '/includes/nav.php';
 <!-- ═══════════════════════ OFFERS HERO ═══════════════════════ -->
 <section class="details-hero">
   <img
-    src="./assets/images/facility_tour.png"
+    src="./assets/images/tour_kaziranga.png"
     alt="Tour Packages and Offers"
     class="details-hero-img"
   />

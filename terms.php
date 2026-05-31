@@ -17,7 +17,7 @@ require_once __DIR__ . '/includes/nav.php';
 
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
 <section class="details-hero">
-  <img src="./assets/images/lobby_gallery.png" alt="Terms & Conditions" class="details-hero-img" style="filter: brightness(0.3);" />
+  <img src="./assets/images/Gallery.jpeg" alt="Terms & Conditions" class="details-hero-img" style="filter: brightness(0.3);" />
   <div class="details-hero-overlay">
     <div class="details-hero-inner">
       <a href="./index.php" class="details-breadcrumb">

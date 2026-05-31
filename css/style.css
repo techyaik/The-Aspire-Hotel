@@ -709,7 +709,7 @@ nav.scrolled .nav-dropdown-menu a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--white-a60);
+  color: var(--white-a70);
   padding: 8px 12px;
   display: block;
   transition: all var(--t-base);
@@ -1784,7 +1784,7 @@ nav.scrolled .nav-hamburger span {
 .gallery-swiper .swiper-button-next:hover,
 .gallery-swiper .swiper-button-prev:hover {
   background: var(--gold);
-  color: var(--white);
+  color: var(--ink-inv);
   transform: scale(1.12);
   box-shadow: 0 6px 25px rgba(184, 148, 84, 0.3);
 }
@@ -2589,7 +2589,7 @@ nav.scrolled .nav-hamburger span {
 .room-gallery-swiper .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
-  background: var(--ink-30);
+  background: rgba(0,0,0,0.3);
   opacity: 1;
   transition: background 0.3s ease, width 0.3s ease;
   border-radius: 4px;
