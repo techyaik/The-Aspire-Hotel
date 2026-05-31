@@ -1064,8 +1064,7 @@ nav.scrolled .nav-hamburger span {
 }
 
 .welcome-image-single {
-  width: 85%;
-  height: auto;
+  width: 100%;
   position: relative;
   margin: 0 auto;
 }
@@ -1087,8 +1086,6 @@ nav.scrolled .nav-hamburger span {
 .welcome-visuals img {
   width: 100%;
   height: auto;
-  max-height: 450px;
-  object-fit: cover;
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-md);
   display: block;
@@ -2882,11 +2879,7 @@ nav.scrolled .nav-hamburger span {
     width: 100%;
   }
 
-  .welcome-visuals img {
-    max-height: 400px;
-  }
-
-  /* Bento gallery */
+/* Bento gallery */
   .gallery-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 280px);
@@ -3042,11 +3035,7 @@ nav.scrolled .nav-hamburger span {
     display: none;
   }
 
-  .welcome-visuals img {
-    max-height: 300px;
-  }
-
-  /* Features: single column */
+/* Features: single column */
   .feature-item {
     flex: 1 1 100%;
     border-left: none;
