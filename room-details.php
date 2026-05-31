@@ -30,6 +30,7 @@ function renderAmenity(array $amenity): string {
     </div>
     HTML;
 }
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -37,6 +38,7 @@ function renderAmenity(array $amenity): string {
 <?php require_once __DIR__ . '/includes/head.php'; ?>
 </head>
 <body>
+  
 
 <?php
 $navPage  = 'details';

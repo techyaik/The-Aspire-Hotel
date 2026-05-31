@@ -1,5 +1,5 @@
 <?php
-$base = (($navPage ?? '') === 'details' || ($navPage ?? '') === 'contact') ? './index.php' : '';
+$base = (($navPage ?? '') === 'details' || ($navPage ?? '') === 'contact' || ($navPage ?? '') === 'gallery') ? './index.php' : '';
 ?>
 <footer class="lara-footer" id="contact">
   <div class="footer-container">
@@ -21,6 +21,7 @@ $base = (($navPage ?? '') === 'details' || ($navPage ?? '') === 'contact') ? './
           <li><a href="<?= $base ?>#about">About Us</a></li>
           <li><a href="<?= $base ?>#rooms">Rooms &amp; Suites</a></li>
           <li><a href="./dining.php">Dining</a></li>
+          <li><a href="./gallery.php">Gallery</a></li>
           <li><a href="<?= $base ?>#explore">Explore</a></li>
           <li><a href="./offers.php">Offers</a></li>
           <li><a href="<?= $base ?>#tariff">Tariff</a></li>

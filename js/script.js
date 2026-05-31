@@ -79,6 +79,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Full gallery page grid
+  const pageGallery = document.querySelector('.gallery-grid-page');
+  if (pageGallery) {
+    pageGallery.addEventListener('click', e => {
+      const item = e.target.closest('.gallery-grid-item');
+      if (item) openLightbox(parseInt(item.dataset.index), window.roomGallery);
+    });
+  }
+
   if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
   if (lightboxNext)  lightboxNext.addEventListener('click',  showNext);
   if (lightboxPrev)  lightboxPrev.addEventListener('click',  showPrev);

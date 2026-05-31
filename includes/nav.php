@@ -8,7 +8,7 @@ $navClass = $navClass ?? '';
 
 require_once __DIR__ . '/../data/rooms.php';
 
-$base = ($navPage === 'details' || $navPage === 'contact') ? './index.php' : '';
+$base = ($navPage === 'details' || $navPage === 'contact' || $navPage === 'gallery') ? './index.php' : '';
 $contactLink = ($navPage === 'contact') ? './contact.php' : './contact.php';
 ?>
 <!-- NAV -->
@@ -25,12 +25,13 @@ $contactLink = ($navPage === 'contact') ? './contact.php' : './contact.php';
     <li class="nav-dropdown">
       <a href="<?= $base ?>#rooms">Rooms</a>
       <ul class="nav-dropdown-menu">
-        <?php foreach ($roomsData as $key => $room): ?>
-          <li><a href="./room-details.php?type=<?= urlencode($key) ?>"><?= htmlspecialchars($room['name']) ?></a></li>
+        <?php foreach ($roomsData as $key => $item): ?>
+          <li><a href="./room-details.php?type=<?= urlencode($key) ?>"><?= htmlspecialchars($item['name']) ?></a></li>
         <?php endforeach; ?>
       </ul>
     </li>
     <li><a href="./dining.php">Dining</a></li>
+    <li><a href="./gallery.php">Gallery</a></li>
     <li><a href="<?= $base ?>#explore">Explore</a></li>
     <li><a href="./offers.php">Offers</a></li>
     <li><a href="<?= $base ?>#tariff">Tariff</a></li>
@@ -52,12 +53,13 @@ $contactLink = ($navPage === 'contact') ? './contact.php' : './contact.php';
         <button class="subnav-toggle" aria-label="Toggle sub-navigation"><i class="ph ph-caret-down"></i></button>
       </div>
       <ul class="mobile-subnav">
-        <?php foreach ($roomsData as $key => $room): ?>
-          <li><a href="./room-details.php?type=<?= urlencode($key) ?>"><?= htmlspecialchars($room['name']) ?></a></li>
+        <?php foreach ($roomsData as $key => $item): ?>
+          <li><a href="./room-details.php?type=<?= urlencode($key) ?>"><?= htmlspecialchars($item['name']) ?></a></li>
         <?php endforeach; ?>
       </ul>
     </li>
     <li><a href="./dining.php">Dining</a></li>
+    <li><a href="./gallery.php">Gallery</a></li>
     <li><a href="<?= $base ?>#explore">Explore</a></li>
     <li><a href="./offers.php">Offers</a></li>
     <li><a href="<?= $base ?>#tariff">Tariff</a></li>

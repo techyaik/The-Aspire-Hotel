@@ -277,9 +277,12 @@
   <!-- ═══════════════════════ GALLERY ═══════════════════════ -->
   <section class="explore" id="explore">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">DISCOVER MORE</span>
-        <h2 class="section-title">Explore The Aspire Hotel</h2>
+      <div class="section-header explore-header reveal">
+        <div class="explore-header-left">
+          <span class="eyebrow">DISCOVER MORE</span>
+          <h2 class="section-title">Explore The Aspire Hotel</h2>
+        </div>
+        <a href="./gallery.php" class="btn-explore">Explore More &nbsp;→</a>
       </div>
       <div class="gallery-slider-container reveal">
         <!-- Swiper -->
