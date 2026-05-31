@@ -156,13 +156,17 @@ require_once __DIR__ . '/includes/nav.php';
       <span class="eyebrow">GALLERY</span>
       <h2 class="section-title"><?= htmlspecialchars($room['name']) ?> Photos</h2>
     </div>
-    <div class="gallery-grid-new reveal">
-      <?php foreach ($room['gallery'] as $i => $img): ?>
-      <div class="gallery-item-new" data-index="<?= $i ?>">
-        <img src="<?= htmlspecialchars($img['url']) ?>" alt="<?= htmlspecialchars($img['title']) ?>" />
-
+    <div class="swiper room-gallery-swiper reveal">
+      <div class="swiper-wrapper">
+        <?php foreach ($room['gallery'] as $i => $img): ?>
+        <div class="swiper-slide room-gallery-slide" data-index="<?= $i ?>">
+          <img src="<?= htmlspecialchars($img['url']) ?>" alt="" />
+        </div>
+        <?php endforeach; ?>
       </div>
-      <?php endforeach; ?>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination room-gallery-pagination"></div>
     </div>
   </div>
 </section>

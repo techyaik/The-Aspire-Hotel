@@ -70,12 +70,32 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxCaption.textContent = activeGallery[lightBoxIndex].title;
   };
 
-  // Room details gallery (server-rendered)
-  const detailsGallery = document.querySelector('.gallery-grid-new');
-  if (detailsGallery) {
-    detailsGallery.addEventListener('click', e => {
-      const item = e.target.closest('.gallery-item-new');
-      if (item) openLightbox(parseInt(item.dataset.index), window.roomGallery);
+  // ── Room Gallery Lightbox ──
+  const roomGallerySwiper = document.querySelector('.room-gallery-swiper');
+  if (roomGallerySwiper) {
+    roomGallerySwiper.addEventListener('click', e => {
+      const slide = e.target.closest('.room-gallery-slide');
+      if (slide) openLightbox(parseInt(slide.dataset.index), window.roomGallery);
+    });
+
+    new Swiper('.room-gallery-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: '.room-gallery-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.room-gallery-swiper .swiper-button-next',
+        prevEl: '.room-gallery-swiper .swiper-button-prev',
+      },
+      breakpoints: {
+        640: { slidesPerView: 1.2, spaceBetween: 24 },
+        768: { slidesPerView: 1.5, spaceBetween: 28 },
+        1024: { slidesPerView: 1.8, spaceBetween: 30 }
+      }
     });
   }
 
