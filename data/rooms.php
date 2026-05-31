@@ -9,7 +9,7 @@ $roomsData = [
         'guests' => '2 Adults + 1 Child',
         'view' => 'City View',
         'gallery' => [
-            ['url' => './assets/images/Standard Double Room1.jpeg', 'title' => 'Standard Double Room'],
+            ['url' => './assets/images/Standard Double Room.jpeg', 'title' => 'Standard Double Room'],
             ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
         ],
         'roomAmenities' => [
