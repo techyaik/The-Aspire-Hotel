@@ -1,12 +1,21 @@
 <?php
 require_once __DIR__ . '/data/rooms.php';
-require_once __DIR__ . '/includes/room-images.php';
 
 $type = isset($_GET['type']) ? $_GET['type'] : 'standard-double';
 if (!array_key_exists($type, $roomsData)) {
     $type = array_key_first($roomsData);
 }
 $room = $roomsData[$type];
+
+$roomHeroImages = [
+    'standard-double' => './assets/images/Standard Double Room.jpeg',
+    'standard-twin'   => './assets/images/Standard Twin Room.jpeg',
+    'deluxe-double'   => './assets/images/Deluxe Double Room.jpeg',
+    'deluxe-family'   => './assets/images/Deluxe Family Room .jpeg',
+    'royale-deluxe'   => './assets/images/Royale Deluxe Room.jpeg',
+    'royale-family'   => './assets/images/Royale Family Room.jpeg',
+];
+$heroImage = $roomHeroImages[$type] ?? $room['gallery'][0]['url'];
 
 $pageTitle       = htmlspecialchars($room['name']) . ' – The Aspire Hotel';
 $pageDescription = htmlspecialchars($room['description']);
@@ -39,7 +48,7 @@ require_once __DIR__ . '/includes/nav.php';
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
 <section class="details-hero">
   <img
-    src="<?= htmlspecialchars(resolveRoomImage($room, $room['gallery'][0]['url'])) ?>"
+    src="<?= htmlspecialchars($heroImage) ?>"
     alt="<?= htmlspecialchars($room['name']) ?>"
     class="details-hero-img"
   />
@@ -138,12 +147,33 @@ require_once __DIR__ . '/includes/nav.php';
   </div>
 </main>
 
-
+<!-- ═══════════════════════ ROOM GALLERY ═══════════════════════ -->
+<section class="room-gallery-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">GALLERY</span>
+      <h2 class="section-title"><?= htmlspecialchars($room['name']) ?> Photos</h2>
+    </div>
+    <div class="gallery-grid-new reveal">
+      <?php foreach ($room['gallery'] as $i => $img): ?>
+      <div class="gallery-item-new" data-index="<?= $i ?>">
+        <img src="<?= htmlspecialchars($img['url']) ?>" alt="<?= htmlspecialchars($img['title']) ?>" />
+        <div class="gallery-label"><?= htmlspecialchars($img['title']) ?></div>
+      </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
 <?php require_once __DIR__ . '/includes/lightbox.php'; ?>
 
 
+<script>
+window.roomGallery = <?= json_encode(array_map(function($img) {
+    return ['url' => $img['url'], 'title' => $img['title']];
+}, $room['gallery'])) ?>;
+</script>
 <script src="./js/script.js"></script>
 </body>
 </html>

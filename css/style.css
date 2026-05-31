@@ -2365,11 +2365,16 @@ nav.scrolled .nav-hamburger span {
   margin-bottom: clamp(40px, 6vw, 80px);
 }
 
+.room-gallery-section {
+  padding: var(--section-padding) var(--container-px);
+  background: var(--surface);
+}
+
 .gallery-grid-new {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--space-4);
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
