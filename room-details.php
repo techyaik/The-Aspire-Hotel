@@ -160,7 +160,7 @@ require_once __DIR__ . '/includes/nav.php';
       <?php foreach ($room['gallery'] as $i => $img): ?>
       <div class="gallery-item-new" data-index="<?= $i ?>">
         <img src="<?= htmlspecialchars($img['url']) ?>" alt="<?= htmlspecialchars($img['title']) ?>" />
-        <div class="gallery-label"><?= htmlspecialchars($img['title']) ?></div>
+
       </div>
       <?php endforeach; ?>
     </div>

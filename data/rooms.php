@@ -11,6 +11,11 @@ $roomsData = [
         'gallery' => [
             ['url' => './assets/images/Standard Double Room.jpeg', 'title' => 'Standard Double Room'],
             ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
+            ['url' => './assets/images/Amenities.jpeg', 'title' => 'Amenities'],
+            ['url' => './assets/images/Amenities1.jpeg', 'title' => 'Amenities 1'],
+            ['url' => './assets/images/Amenities2.jpeg', 'title' => 'Amenities 2'],
+            ['url' => './assets/images/Amenities3.jpeg', 'title' => 'Amenities 3'],
+            ['url' => './assets/images/AspireHotel.jpeg', 'title' => 'AspireHotel'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],
@@ -39,6 +44,11 @@ $roomsData = [
         'gallery' => [
             ['url' => './assets/images/Standard Twin Room.jpeg', 'title' => 'Standard Twin Room'],
             ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
+            ['url' => './assets/images/Amenities.jpeg', 'title' => 'Amenities'],
+            ['url' => './assets/images/Amenities1.jpeg', 'title' => 'Amenities 1'],
+            ['url' => './assets/images/Amenities2.jpeg', 'title' => 'Amenities 2'],
+            ['url' => './assets/images/Amenities3.jpeg', 'title' => 'Amenities 3'],
+            ['url' => './assets/images/AspireHotel.jpeg', 'title' => 'AspireHotel'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],
@@ -67,6 +77,11 @@ $roomsData = [
         'gallery' => [
             ['url' => './assets/images/Deluxe Double Room.jpeg', 'title' => 'Deluxe Double Room'],
             ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
+            ['url' => './assets/images/Amenities.jpeg', 'title' => 'Amenities'],
+            ['url' => './assets/images/Amenities1.jpeg', 'title' => 'Amenities 1'],
+            ['url' => './assets/images/Amenities2.jpeg', 'title' => 'Amenities 2'],
+            ['url' => './assets/images/Amenities3.jpeg', 'title' => 'Amenities 3'],
+            ['url' => './assets/images/AspireHotel.jpeg', 'title' => 'AspireHotel'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],
@@ -95,6 +110,11 @@ $roomsData = [
         'gallery' => [
             ['url' => './assets/images/Deluxe Family Room.jpeg', 'title' => 'Deluxe Family Room'],
             ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
+            ['url' => './assets/images/Amenities.jpeg', 'title' => 'Amenities'],
+            ['url' => './assets/images/Amenities1.jpeg', 'title' => 'Amenities 1'],
+            ['url' => './assets/images/Amenities2.jpeg', 'title' => 'Amenities 2'],
+            ['url' => './assets/images/Amenities3.jpeg', 'title' => 'Amenities 3'],
+            ['url' => './assets/images/AspireHotel.jpeg', 'title' => 'AspireHotel'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],
@@ -123,6 +143,11 @@ $roomsData = [
         'gallery' => [
             ['url' => './assets/images/Royale Deluxe Room.jpeg', 'title' => 'Royale Deluxe Room'],
             ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
+            ['url' => './assets/images/Amenities.jpeg', 'title' => 'Amenities'],
+            ['url' => './assets/images/Amenities1.jpeg', 'title' => 'Amenities 1'],
+            ['url' => './assets/images/Amenities2.jpeg', 'title' => 'Amenities 2'],
+            ['url' => './assets/images/Amenities3.jpeg', 'title' => 'Amenities 3'],
+            ['url' => './assets/images/AspireHotel.jpeg', 'title' => 'AspireHotel'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],
@@ -151,6 +176,11 @@ $roomsData = [
         'gallery' => [
             ['url' => './assets/images/Royale Family Room.jpeg', 'title' => 'Royale Family Room'],
             ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
+            ['url' => './assets/images/Amenities.jpeg', 'title' => 'Amenities'],
+            ['url' => './assets/images/Amenities1.jpeg', 'title' => 'Amenities 1'],
+            ['url' => './assets/images/Amenities2.jpeg', 'title' => 'Amenities 2'],
+            ['url' => './assets/images/Amenities3.jpeg', 'title' => 'Amenities 3'],
+            ['url' => './assets/images/AspireHotel.jpeg', 'title' => 'AspireHotel'],
         ],
         'roomAmenities' => [
             ['name' => 'Free Wi-Fi', 'icon' => 'wifi-high'],
