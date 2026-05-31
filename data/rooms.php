@@ -143,10 +143,10 @@ $roomsData = [
         'gallery' => [
             ['url' => './assets/images/Royale Deluxe Room.jpeg', 'title' => 'Royale Deluxe Room'],
             ['url' => './assets/images/washroom_gallery.png.jpeg', 'title' => 'Modern Washroom'],
-            ['url' => './assets/images/Amenities.jpeg', 'title' => 'Amenities'],
-            ['url' => './assets/images/Amenities1.jpeg', 'title' => 'Amenities 1'],
-            ['url' => './assets/images/Amenities2.jpeg', 'title' => 'Amenities 2'],
-            ['url' => './assets/images/Amenities3.jpeg', 'title' => 'Amenities 3'],
+            ['url' => './assets/images/Royale Deluxe Room_amenities.jpeg', 'title' => 'Amenities'],
+            ['url' => './assets/images/Royale Deluxe Room_amenities1.jpeg', 'title' => 'Amenities 1'],
+            ['url' => './assets/images/Royale Deluxe Room_amenities2.jpeg', 'title' => 'Amenities 2'],
+            ['url' => './assets/images/Royale Deluxe Room_amenities3.jpeg', 'title' => 'Amenities 3'],
             ['url' => './assets/images/AspireHotel.jpeg', 'title' => 'AspireHotel'],
         ],
         'roomAmenities' => [
