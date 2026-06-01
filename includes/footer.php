@@ -8,7 +8,7 @@ $base = (($navPage ?? '') === 'details' || ($navPage ?? '') === 'contact' || ($n
       <div class="footer-col brand-col">
         <div class="footer-logo">THE ASPIRE</div>
         <p class="brand-text">
-          Excellence in hospitality since 1970. We redefine luxury through
+          Since 2026. Brand new hotel in guwahati. We redefine luxury through
           personalized experiences and architectural masterpieces in the
           heart of the city.
         </p>
@@ -34,6 +34,7 @@ $base = (($navPage ?? '') === 'details' || ($navPage ?? '') === 'contact' || ($n
         <div class="contact-info">
           <p>Silver Aspire Tower, MD Shah Rd, Paltan Bazaar,<br />Guwahati, Assam 781008</p>
           <p class="phone">+91 91819 12340</p>
+          <p class="phone">+91 60012 32340 <span style="font-weight:400;opacity:0.6">(Reception)</span></p>
           <p class="email">theaspirehotel@gmail.com</p>
           <p class="whatsapp">WhatsApp: +91 91819 12340</p>
         </div>

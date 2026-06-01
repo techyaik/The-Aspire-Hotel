@@ -246,6 +246,10 @@
               <p>
                 <a href="tel:+919181912340">+91 91819 12340</a>
               </p>
+              <p style="margin-top:4px;">
+                <a href="tel:+916001232340">+91 60012 32340</a>
+                <span style="font-weight:400;opacity:0.6;font-size:0.85em"> (Reception)</span>
+              </p>
             </div>
           </div>
 

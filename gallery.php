@@ -17,7 +17,7 @@ require_once __DIR__ . '/includes/nav.php';
 
 <?php
 $galleryImages = [
-  ['src' => 'Slider1.jpeg', 'title' => 'Grand Lobby'],
+    ['src' => 'Slider1.jpeg', 'title' => ''],
 ];
 $galleryNumbers = array_merge([0], range(1, 10), range(12, 22));
 foreach ($galleryNumbers as $n) {
